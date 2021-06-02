@@ -3,8 +3,8 @@
 #indexpage {
     /*Grids*/
     display: grid;
-    grid-template-areas: "hd hd hd";
-    grid-template-rows: auto;
+    grid-template-areas: "hd hd hd" "bd bd bd" "ft ft ft";
+    grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
 
 }
@@ -14,3 +14,21 @@
     grid-area: hd;
 
 }
+
+#indexpage > body {
+    grid-area: bd;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: darkgray;
+}
+
+#indexpage > footer {
+    grid-area: ft;
+}
+
+
+#indexpage > h1 {
+    color: black;
+    transition: 300ms ease;
+}
+
