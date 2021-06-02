@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<!--Kommentar-->
+
+<!-- Flexbox ting -->
+<!-- https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_website2 -->
+
+<html lang="en" lang="no">
 <head>
+    <!--Setter bredden på siden til 1, gjør at grids kan bli oppgitt i prosent-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!--Gir ÆØÅ-->
+    <meta charset="utf-8" />
+    <!--Linker extern css sheet-->
     <link rel="stylesheet" type="text/css" href="CSS/main.css">
-    <title>Henrik Hjemmeside</title>
+
+    <!--Website tab icon-->
+    <link rel="icon" href="mainbilder/minilogo.png">
+    <title>Henrik Hub</title>
 </head>
 <body>
 
+    <!--Selve siden er her-->
+    <section id="page">
 
-    <h1>Hei! Jeg heter Henrik! Dette er siden hvor jeg forklarer litt om meg selv.</h1>
+        <!--Meny og dropdown meny er her-->
+        <div class="header"> <div class="homebtn"> <a href="#">Henrik's Hub</a></div> </div>
 
+        <div class="header-menu">
+            <!--Her er dropdown menyen-->
+            <div class="dropdown">
+                <button class="dropbtn">Fag</button>
+                    <div class="dropdown-content">
+                        <a href="https://youtube.com/">Youtube</a>
+                    </div>
+            </div>  
+
+            <div class="dropdown">
+                <button class="dropbtn">Annet skolerelatert</button>
+                    <div class="dropdown-content">
+                        <a href="https://youtube.com/">Youtube</a>
+                    </div>
+            </div>
+
+        </div>
+
+
+        <!--Left space og right space gir mellomrommet på sidene-->
+        <main>
+
+            <!--Her er innholdet på siden -->
+            <h1 class="headmain">Henrik sin skole hub</h1> <br />
+            <p class="paramain"> Hei! Dette er nettsiden jeg kommet til å bruke framover for å publisere det jeg gjør i de forskjellige fagene på 1IM :-D</p>
+
+
+
+
+
+
+        </main>  
+        <div class="footer"><p class="fotp">Henrik made this</p></div>
+    </section>
 
 </body>
 </html>
