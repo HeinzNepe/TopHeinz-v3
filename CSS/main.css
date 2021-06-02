@@ -1,0 +1,16 @@
+/* Index.html */
+
+#indexpage {
+    /*Grids*/
+    display: grid;
+    grid-template-areas: "hd hd hd";
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+
+}
+
+
+#indexpage > header {
+    grid-area: hd;
+
+}
