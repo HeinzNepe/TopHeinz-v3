@@ -224,7 +224,6 @@ Main Content
   width: 100%;
   margin: auto; 
   display: flex;
-  flex-direction: column; /* Logo starts stacked on top of nav */
   align-items: center;
 }
 
