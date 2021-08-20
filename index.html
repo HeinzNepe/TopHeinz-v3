@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
-<!--Kommentar-->
+<!-- Reuse html code -->
+<!-- https://medium.com/@AmyScript/how-to-reduce-reuse-and-recycle-your-code-389e6742e4ac -->
 
 <!-- Flexbox ting -->
 <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_website2 -->
@@ -17,45 +17,17 @@
     <!--Website tab icon-->
     <link rel="icon" href="mainbilder/minilogo.png">
     <title>Henrik Hub</title>
-</head>
-<body>
 
-    <section class="Header-Section">
 
-       <div class="main-flex">
+	<!-- Scripts imports -->
 	
-			<header>
-				<!-- Header copied from https://codepen.io/mokey/pen/boqBoe -->
-				<div class="header-container">
-					<a  href="https://topheinz.com/" >
-						<img class="logo" src="mainbilder/minilogo.png" alt="mine logo ess this" >
-					</a>
+</head>
+<body>	
+	<header>
+		<div id="header-pre" class="header-pre"></div>
+	</header>	
 
-					<nav class="main-menu">
-						
-						<a class="menu-button" href="#">Home</a>
 
-						<a class="menu-button" href="https://heinz.nisse.wtf/">School site</a>
-
-						<div class="dropdown-wrapper menu-button">
-								
-							<a class="menu-button" href="#" >Contact</a>
-								
-							<div class="drop-menu">
-								<a class="menu-button" href="#">I'd</a>
-								<a class="menu-button" href="#">Like</a>
-								<a class="menu-button" href="#">a</a>
-								<a class="menu-button" href="#">Job</a>
-							</div>
-						</div>
-						
-					</nav>
-				</div>
-			</header>
-
-		</div>
-
-    </section>
 	<section class="AboutMe-Section">
 
 		<div class="main-flex" id="main-content">
@@ -70,5 +42,14 @@
 
 	</section>
 
+	<section class="scripts">
+		<!-- Script import -->
+		<script src="/JS/lib/jquery-3.6.0.min.js"></script>
+
+		<!-- Scripts -->
+		<script> console.log("Send help"),$("#header-pre").load("/sections/header.html");</script>
+
+
+	</section>
 </body>
 </html>

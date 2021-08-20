@@ -90,6 +90,7 @@ Header
           padding: .75em 1em;
           display: block;
           border-bottom: 2px solid #fefffe; 
+          transition: 0.3s;
       }
 
       .main-menu a:hover {
