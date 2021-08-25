@@ -40,6 +40,7 @@ Header
         
         --DM-Header-Background: #3d3d3d;
         --DM-Body-Background: #333;
+        --Menu-Btn-Gray: #505050;
         --DM-Text-Colour: #fefffe;
         --Site-Default-Red: #ed0929;
         }
@@ -97,7 +98,7 @@ Header
           transition: 0.3s;
       }
 
-      .main-menu a:hover {
+      .main-menu a:hover{
             color: var(--Site-Default-Red);
             border-bottom-color: var(--Site-Default-Red); 
       }
@@ -121,7 +122,7 @@ Header
 
       .drop-menu > .menu-button {
         transition: transform .4s;
-        background: rgb(73, 73, 73); /* Makes the menu effects visible on close */ 
+        
       }
 
 
@@ -146,7 +147,10 @@ Header
       @media (max-width:550px) {
         .bio {
           width: 80%;
-        }        
+        }
+        .drop-menu > .menu-button {
+          background: var(--Menu-Btn-Gray); /* Makes it easier to distinguish between dropdown button and button */ 
+        } 
       }
 
       @media (min-width: 550px) {
@@ -203,7 +207,7 @@ Header
 
         .header-container {
           flex-direction: row; /* Places logo on the same line as .main-menu */
-          justify-content: space-around; 
+          /*justify-content: space-around;*/
           height: 160px;
         } 
 
@@ -211,7 +215,9 @@ Header
           width: 60%;
           justify-content: space-evenly;
         }
-
+        .main-menu > .menu-button {
+          background: var(--DM-Header-Background);
+        }
         .logo {
           margin: 0;
         }
