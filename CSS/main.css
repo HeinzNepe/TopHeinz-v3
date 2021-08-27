@@ -1,6 +1,45 @@
-#Header-Section {
-  display: flex;
+/*The different colour variables*/
+
+body {
+  background: var(--DM-Body-Background); 
+         
+  --DM-Header-Background: #3d3d3d;
+  --DM-Body-Background: #333;
+  --Menu-Btn-Gray: #505050;
+  --DM-Text-Colour: #fefffe;
+  --Site-Default-Red: #ed0929;
+ }
+
+
+/* ==========================================
+  RESET (whatever that means)
+===========================================*/ 
+
+* { 
+/*I dont know what this does, but it works and is necescary*/
+ box-sizing: border-box;
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+
+ /*Text styling and stuff*/
+ color: var(--DM-Text-Colour);
+ text-decoration: none;
+ size: 16px;
+ font-family: 'Vollkorn', Arial, serif;
+ font-size: 1em; 
 }
+
+/*====================================
+ BASE STYLES
+====================================*/
+
+
+     
+
+/*====================================
+Layout and MEDIA QUERIES
+====================================*/
 
 
 .main-flex {
@@ -10,222 +49,26 @@
   justify-content: center;
 }
 
+/*=======================*/
+
+@media (max-width:550px) {
+  .bio {
+    width: 80%;
+  }
+}
+
+@media (min-width:550px) {
+  .bio {
+    width: 30em;
+  }
+}
 
 
-/* ==========================================
-Header
-===========================================*/
-
-
-      /* ==========================================
-          RESET
-      ===========================================*/ 
-
-      * { 
-          color: var(--DM-Text-Colour);
-          box-sizing: border-box;
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-          text-decoration: none;
-          size: 16px;
-      }
-
-      /*====================================
-        BASE STYLES
-      ====================================*/
-
-      body {
-        background: var(--DM-Body-Background); 
-        
-        --DM-Header-Background: #3d3d3d;
-        --DM-Body-Background: #333;
-        --Menu-Btn-Gray: #505050;
-        --DM-Text-Colour: #fefffe;
-        --Site-Default-Red: #ed0929;
-        }
-
-
-      * {
-        font-family: 'Vollkorn', Arial, serif;
-        font-size: 1em; 
-      }
-
-      /*====================================
-        HEADER STYLES
-      ====================================*/
-      header {
-        background: var(--DM-Header-Background);
-        box-shadow: 0px -3px 15px 2px;
-        color: var(--Site-Default-Red);
-        }
-
-      .header-container {
-        width: 100%;
-        margin: auto; 
-        display: flex;
-        flex-direction: column; /* Logo starts stacked on top of nav */
-        align-items: center;
-      }
-        
-      .logo {
-        max-width: 120px;
-        max-height: 120px;
-        margin-top: 10px; 
-      }
-
-
-      /*====================================
-        MENU STYLES
-      ====================================*/
-
-      .main-menu {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 25px;  /* Space for logo */
-        overflow: visible;
-        
-        max-width: 700px;  /* Keeps the buttons getting too far from each other on largest screens */ 
-      }
-
-      .main-menu a {
-          width: 100%;
-          text-align: center;
-          padding: .75em 1em;
-          display: block;
-          border-bottom: 2px solid var(--DM-Text-Colour); 
-          transition: 0.3s;
-      }
-
-      .main-menu a:hover{
-            color: var(--Site-Default-Red);
-            border-bottom-color: var(--Site-Default-Red); 
-      }
-
-      /*====================================
-        DROPDOWN MENU STYLES
-      ====================================*/
-        
-      /* The hidden-at-first drop menus */
-      .drop-menu {
-        display: flex;
-        flex-direction: column; /* This never changes */
-        align-items: center;
-        width: 100%; /* Allows sub buttons to stretch across button width in main-menu*/
-        transition: max-height .4s, opacity .3s;
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden; /* Keeps links in drop menu from displaying until height is large enough */
-      }
-
-
-      .drop-menu > .menu-button {
-        transition: transform .4s;
-        
-      }
-
-
-      /* The dropdown-wrapper wraps both the .main-menu button and drop down menu */
-      /* Expands .drop-menu to children height, not setting an expicit height allows variable # of buttons */
-      .dropdown-wrapper:hover .drop-menu{
-        max-height: 300px;  
-        opacity: 1;
-      }
-
-      /* The specifity keeps styles from affecting main menu button */
-      .dropdown-wrapper:hover > .drop-menu .menu-button {
-        transform: translateY(0%); 
-      }
-
-
-
-      /*====================================
-        MEDIA QUERIES
-      ====================================*/
-
-      @media (max-width:550px) {
-        .bio {
-          width: 80%;
-        }
-        .drop-menu > .menu-button {
-          background: var(--Menu-Btn-Gray); /* Makes it easier to distinguish between dropdown button and button */ 
-        } 
-      }
-
-      @media (min-width: 550px) {
-        
-        
-          /*====================================
-            DROP-MENU EFFECTS (LARGER SCREENS)
-          ====================================*/
-          /* Resets dropdown styles to not affect the effects. Overflow still set to hidden allows for menu effects like sliding in */
-
-            .fade-in .menu-button {
-              transition: opacity .5s;
-              opacity: 0;
-            }
-            .dropdown-wrapper:hover .fade-in .menu-button {
-              opacity: 1;
-            }
-            
-            .bio {
-              width: 30em;
-            }
-
-        .header-container {
-          width: 90%;
-        }
-
-        .header-container {
-          height: 200px;
-          justify-content: space-between; /* Pushes logo to top, nav bar all the way down */
-        } 
-        
-        .main-menu {   
-          flex-direction: row; /* Horizontal main menu buttons */
-          align-items: flex-start; /* Makes the top of the 'dropdown-wrapper' div stay flush with button top because it's aligned on the cross-axis */
-          height: 48px; /* Setting the height allows the dropdown outside of it's parent's bounds, therefore not compensated for by the flex. */
-          margin: 0;
-          justify-content: center;
-        }
-          
-        .main-menu > .menu-button {
-          width: 23%;
-          max-width: 150px;
-        }
-
-        .logo {
-          max-width: 130px;
-          max-height: 130px;
-          margin-top: 15px; 
-        }
-
-      }
-
-      @media (min-width: 890px) {
-
-        .header-container {
-          flex-direction: row; /* Places logo on the same line as .main-menu */
-          /*justify-content: space-around;*/
-          height: 160px;
-        } 
-
-        .main-menu {
-          width: 60%;
-          justify-content: space-evenly;
-        }
-        .main-menu > .menu-button {
-          background: var(--DM-Header-Background);
-        }
-        .logo {
-          margin: 0;
-        }
-
-        .bio {
-          width: 50em;
-        }
-      }
+@media (min-width: 890px) {
+  .bio {
+    width: 50em;
+  }
+}
 
 /*====================================
 Main Content
