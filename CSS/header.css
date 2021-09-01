@@ -74,6 +74,7 @@ Header
     }
 
     .main-menu a:hover{
+          font-size: 1.2em;
           color: var(--Site-Default-Red);
           border-bottom-color: var(--Site-Default-Red); 
     }

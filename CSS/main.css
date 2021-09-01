@@ -2,13 +2,15 @@
   BASE STYLES
 ====================================*/
 body {
-  background: var(--DM-Body-Background); 
+  background: var(--DM-Body-Background);
+  overflow:overlay;
   
   --DM-Header-Background: #3d3d3d;
   --DM-Body-Background: #333;
   --Menu-Btn-Gray: #505050;
   --DM-Text-Colour: #fefffe;
   --Site-Default-Red: #ed0929;
+  --Site-Darker-Red: rgba(179, 8, 31, 0.5);
 }
 
 * { 
@@ -24,9 +26,32 @@ body {
 }
 
 
+/*====================================
+Scroll bar
+====================================*/
+.content-sec {
+ width: 100%;
+}
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--Site-Darker-Red); 
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--Site-Default-Red); 
+}
 
 
 /*====================================
@@ -56,6 +81,7 @@ Main Content
 
 .bio {
   overflow-wrap: normal;
+  line-height: 3em;
 }
 
 

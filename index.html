@@ -22,10 +22,10 @@
 </head>
 <body>	
 	<header>
-		<div id="header-pre" class="header-pre"></div>
+		<div id="header-pre"></div>
 	</header>	
 
-
+<section class="content-sec">
 	<section class="AboutMe-Section">
 
 		<div class="main-flex" id="main-content">
@@ -35,24 +35,27 @@
 				<img id="pfp_img" src="/mainbilder/Pfp1.jpg" alt="Ehh, picture of me should have loaded here.. ">
 			</div>
 			<section id="selfbio">
-			<p1 class="bio">Hello!</p1><br><br>
-			<p1 class="bio">My name is Henrik. I am a</p1>  <p1 id="agejs">(Age calculation failed)</p1>  <p1>year old guy with interests in IT. I go to Amalie Skram VGS in Bergen and I love learning!</p1>
-			<br><br>
-			<p1 class="bio">I have experience with html, css, python, Linux and Active directory. To show off my skills, i made this site by myself and plan to maintain it as i learn.</p1>
+			<p1 class="bio">Hello!</p1><br>
+			<p1 class="bio">My name is Henrik. I am a</p1>  <p1 id="agejs">(Age calculation failed)</p1>  <p1>year old guy with interests in IT. I go to Amalie Skram VGS in Bergen and I love learning!</p1><br>
+			<p1 class="bio">On my freetime I like working on small projects like this very site, along with gaming and hanging out with friends.</p1><br>
+			<p1 class="bio">I have experience with html, css, python, Linux and Active directory. To show off my skills, i made this school site by myself and plan to maintain it as i learn.</p1><br>
+			<p1 class="bio">Throughout the coming schoolyear I'll publish projects we work on and other fun stuff</p1><br>
 			</section>
 		</div>
 
 
 	</section>
+</section>
 
-	<section class="scripts">
-		<!-- Script import -->
-		<script src="/JS/lib/jquery-3.6.0.min.js"></script>
-		<script src="JS/age.js"></script>
 
-		<!-- Scripts -->
-		<script> console.log("Header Loaded"),$("#header-pre").load("/sections/header.html");</script>
+<section class="scripts">
 
-	</section>
+	<!-- Script import -->
+	<script src="/JS/lib/jquery-3.6.0.min.js"></script>
+	<script src="JS/age.js"></script>
+
+	<!-- Scripts -->
+	<script> console.log("Header Loaded"),$("#header-pre").load("/sections/header.html");</script>
+</section>
 </body>
 </html>
