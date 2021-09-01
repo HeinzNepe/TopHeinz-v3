@@ -19,20 +19,11 @@ Header
        font-size: 1em; 
     }
 
-    /*====================================
-      BASE STYLES
-    ====================================*/
 
-    body {
-      background: var(--DM-Body-Background); 
       
-      --DM-Header-Background: #3d3d3d;
-      --DM-Body-Background: #333;
-      --Menu-Btn-Gray: #505050;
-      --DM-Text-Colour: #fefffe;
-      --Site-Default-Red: #ed0929;
-      }
-
+    #Header-Section {
+        display: flex;
+    }
 
 
     /*====================================
@@ -150,9 +141,7 @@ Header
             opacity: 1;
           }
           
-          .bio {
-            width: 30em;
-          }
+
 
       .header-container {
         width: 90%;
@@ -172,8 +161,10 @@ Header
       }
         
       .main-menu > .menu-button {
+        background: var(--DM-Header-Background); /* Makes it easier to distinguish between dropdown button and button */ 
         width: 23%;
         max-width: 150px;
+        z-index: 1;
       }
 
       .logo {
@@ -203,7 +194,4 @@ Header
         margin: 0;
       }
 
-      .bio {
-        width: 50em;
-      }
     }
