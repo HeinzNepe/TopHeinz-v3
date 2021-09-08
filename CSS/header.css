@@ -4,6 +4,7 @@ Header
 
 #Header-Section {
   display: flex;
+  height: 22vh;
 }
 
 /*====================================
@@ -115,10 +116,7 @@ header {
     DROP-MENU EFFECTS (LARGER SCREENS)
   ====================================*/
     /* Resets dropdown styles to not affect the effects. Overflow still set to hidden allows for menu effects like sliding in */
-      .fade-in .menu-button {
-        transition: opacity .5s;
-        opacity: 0;
-      }
+
       .dropdown-wrapper:hover .fade-in .menu-button {
         opacity: 1;
       }
