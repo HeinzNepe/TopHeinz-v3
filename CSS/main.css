@@ -3,7 +3,7 @@
 ====================================*/
 body {
   background: var(--DM-Body-Background);
-  overflow-x:overlay;
+  overflow:overlay;
   
   /*CSS colour variables*/
   --DM-Header-Background: #3d3d3d;
@@ -29,8 +29,7 @@ body {
 
 /*Define the content area*/
 .content-sec {
-  max-height: calc(100vh - 22vh);
-  overflow-y: scroll;
+  width: 100%;
  }
 
 /*====================================
@@ -38,22 +37,22 @@ Scroll bar
 ====================================*/
 
 /* width */
-.content-sec > ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-.content-sec > ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: none; 
 }
  
 /* Handle */
-.content-sec > ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: var(--Site-Darker-Red); 
 }
 
 /* Handle on hover */
-.content-sec > ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: var(--Site-Default-Red); 
 }
 
@@ -66,6 +65,7 @@ Main Content
 .main-flex {
   width: 100%;
   flex-direction: column;
+  margin-bottom: 5em;
   justify-content: center;
 }
 
