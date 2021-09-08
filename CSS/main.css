@@ -2,7 +2,6 @@
   BASE STYLES
 ====================================*/
 body {
-  background: var(--DM-Body-Background);
   overflow:overlay;
   
   /*CSS colour variables*/
@@ -65,13 +64,15 @@ Main Content
 .main-flex {
   width: 100%;
   flex-direction: column;
-  margin-bottom: 5em;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 /*Define flex child*/
 #main-content {
   width: 100%;
+  padding-top:5em;
+  padding-bottom:3em;
+  background: var(--DM-Body-Background);
   padding: auto; 
   display: flex;
 
@@ -85,10 +86,25 @@ Main Content
   border-radius: 50%;
 }
 
+#selfbio {
+  padding-bottom: 2em;
+}
+
 /*Custom definitions for bio on index*/
 .bio {
   overflow-wrap: normal;
-  line-height: 3em;
+  line-height: 2em;
+}
+
+#interests {
+  background: black;
+  height: 50em;
+  padding-top: 2em;
+}
+
+.int-bio {
+  overflow-wrap: normal;
+  line-height: 2em;
 }
 
 
