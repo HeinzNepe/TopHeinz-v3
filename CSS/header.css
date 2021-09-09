@@ -13,7 +13,6 @@ Header
 /*Header section styles*/
 header {
   background: var(--DM-Header-Background);
-  box-shadow: 0px -3px 15px 2px;
   color: var(--Site-Default-Red);
   border-bottom: 0.2em groove var(--Site-Default-Red) ;
   }
@@ -31,7 +30,8 @@ header {
 .logo {
   max-width: 120px;
   max-height: 120px;
-  margin-top: 10px; 
+  margin-top: 10px;
+  user-select: none;
 }
 
 /*====================================

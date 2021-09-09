@@ -5,7 +5,7 @@
 <!-- Flexbox ting -->
 <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_website2 -->
 
-<html lang="en" lang="no">
+<html lang="no">
 <head>
     <!--Setter bredden på siden til 1, gjør at grids kan bli oppgitt i prosent-->
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -20,7 +20,8 @@
     <title>Henrik Hub</title>
 	
 </head>
-<body>	
+<body>
+	<!--TODO Fix the header button-->
 	<header>
 		<div id="header-pre"></div>
 	</header>	
@@ -29,30 +30,61 @@
 	<section class="AboutMe-Section">
 
 		<div class="main-flex" id="main-content">
+			<section class="main-flex" id="selfbio">
 
 			<div class="main-flex">
 				<img id="pfp_img" src="/mainbilder/Pfp1.jpg" alt="Ehh, picture of me should have loaded here.. ">
-			</div>
-			<section class="main-flex" id="selfbio">
+			</div><br>
+
 			<h1>About me</h1>
 			<br>
 			<p1 class="bio">Hello!</p1><br>
-			<p1 class="bio">My name is Henrik Xavier Nepstad. I am a</p1>  <p1 id="agejs">(Age calculation failed)</p1>  <p1>year old guy with interests in IT. I go to Amalie Skram VGS in Bergen and I love learning!</p1><br>
-			<p1 class="bio">I have experience with html, css, python, Linux and Active directory. </p1><br>
-			<p1 class="bio">To show off my skills, i made this school site by myself and plan to maintain it as i learn.</p1><br>
-			<p1 class="bio">Throughout the coming schoolyear I'll publish projects we work on and other fun stuff</p1><br>
+			<p1 class="bio">My name is Henrik Xavier Nepstad. I am a</p1>  <p1 id="agejs">(Age calculation failed)</p1>  <p1>year old guy with interests in IT. I go to Amalie Skram VGS in Bergen and I love learning!</p1>
+			<p1 class="bio">I have experience with html, css, python, Linux and Active directory. </p1>
+			<p1 class="bio">On my freetime I like working on small projects like this very site, along with gaming and hanging out with friends.</p1>
+			<p1 class="bio">To show off my skills, I made this school site by myself and plan to maintain it as I learn.</p1>
+			<p1 class="bio">Throughout the coming schoolyear I'll publish projects we work on and other fun stuff</p1>
 			</section>
+
 			<section class="main-flex" id="interests">
-			<!--<p1 class="int-bio">On my freetime I like working on small projects like this very site, along with gaming and hanging out with friends.</p1><br>-->
-			<h1 style="padding-top:3em;font-size: 5em;">This part is currently under construction. Check back later for new content!</h1>
+			<h1>Interests</h1>
+			<br>
+			<p1 class="int-bio">On my freetime I like working on small projects like this very site, along with gaming and hanging out with friends.</p1><br>
+			<br>
+			<p1 class="int-bio">Not to mention, I love listening to music such as</p1>
+
+			<!--TODO Fix the sad spacing between albums-->
+			<div class="artist-flex">
+				<div class="item-flex">
+					<a href="https://open.spotify.com/album/2WT1pbYjLJciAR26yMebkH?si=ol6M9HH3REyAvtiLAW1DTQ&dl_branch=1" target="_blank"><img alt="imageload failed" class="album-img" src="mainbilder/Albums/TheDarkSideOfTheMoon.jpg"></a>
+					<i>The dark side of the moon</i>
+					<b>By Pink Floyd</b>
+				</div>
+				<div class="item-flex">
+					<a href="https://open.spotify.com/album/36AWYqwFvbAbxxCFgbRfJo?si=8S7kVxyhS42KZEoFH61I3g&dl_branch=1" target="_blank"><img alt="imageload failed" class="album-img" src="mainbilder/Albums/Chronologic.jpg"></a>
+					<i>Chronologic</i>
+					<b>By Caravan Palace</b>
+				</div><div class="item-flex">
+					<a href="https://open.spotify.com/album/5I9K0u8r52jp4Y2bF8mOaz?si=AMV0gq0xQiuv_AfTaSibZA&dl_branch=1" target="_blank"><img alt="imageload failed" class="album-img" src="mainbilder/Albums/SongMachine.jpg"></a>
+					<i>Song machine</i>
+					<b>By Gorillaz</b>
+				</div>
+
+			</div>
+			<!--<h1 style="padding-top:3em;font-size: 5em;">This part is currently under construction. Check back later for new content!</h1>-->
 
 			</section>
+			<footer>
+			<p1>Copyright to Henrik Xavier Nepstad</p1><br>
+			<p1>Because I made this</p1><br>
+			<p1>So don't steal</p1>
+			</footer>
 		</div>
 
-
+		
 	</section>
+	
 </section>
-
 
 <section class="scripts">
 
@@ -61,7 +93,7 @@
 	<script src="/JS/age.js"></script>
 
 	<!-- Scripts -->
-	<script> console.log("Header Loaded"),$("#header-pre").load("/sections/header.html");</script>
+	<script>console.log("Header Loaded");$("#header-pre").load("/sections/header.html");</script>
 </section>
 </body>
 </html>

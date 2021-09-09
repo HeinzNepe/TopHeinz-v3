@@ -3,6 +3,7 @@
 ====================================*/
 body {
   overflow:overlay;
+  overflow-x: hidden;
   
   /*CSS colour variables*/
   --DM-Header-Background: #3d3d3d;
@@ -32,7 +33,7 @@ body {
  }
 
 /*====================================
-Scroll bar
+Scroll bar and marking
 ====================================*/
 
 /* width */
@@ -56,6 +57,17 @@ Scroll bar
 }
 
 
+::-moz-selection{
+  // Code for Firefox
+  color: white;
+  background: var(--Site-Darker-Red);
+}
+
+::selection{
+  color: white;
+  background: var(--Site-Darker-Red);
+}
+
 /*====================================
 Main Content
 ====================================*/
@@ -70,10 +82,8 @@ Main Content
 /*Define flex child*/
 #main-content {
   width: 100%;
-  padding-top:5em;
-  padding-bottom:3em;
   background: var(--DM-Body-Background);
-  padding: auto; 
+  padding: 5em auto 5em auto; /*Top, right, bottom, left*/
   display: flex;
 
   justify-content: center;
@@ -84,33 +94,76 @@ Main Content
 /*Define the pfp on index page*/
 #pfp_img {
   border-radius: 50%;
+  user-select: none;
 }
 
 #selfbio {
+  padding-top: 2em;
   padding-bottom: 2em;
+  max-width: 70ch;
 }
 
 /*Custom definitions for bio on index*/
 .bio {
   overflow-wrap: normal;
-  line-height: 2em;
+  line-height: 2em
+
 }
 
 #interests {
-  background: black;
-  height: 50em;
+  border-top: 0.2em groove var(--Site-Darker-Red) ;
+  background: var(--DM-Body-Background);
+  height: auto;
   padding-top: 2em;
 }
 
 .int-bio {
+  display: inline-block;
   overflow-wrap: normal;
   line-height: 2em;
+  max-width: 60ch;
+}
+
+/*====================================
+Interests section
+====================================*/
+.artist-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  height: auto;
+  margin: 2em 0 2em 0;
+}
+
+.item-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1em;
+  width: 12em;
+  text-align: left;
+}
+
+.album-img {
+  width: 12em;
+  user-select: none;
+  border-radius: 5%;
 }
 
 
 
+
+
 /*====================================
-Main Content
+Footer style
+====================================*/
+footer {
+  padding: 1em;
+}
+
+/*====================================
+Media queries for content
 ====================================*/
 
 @media (max-width:550px) {
