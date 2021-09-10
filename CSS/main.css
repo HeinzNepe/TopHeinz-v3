@@ -3,6 +3,7 @@
 ====================================*/
 body {
   overflow:overlay;
+  overflow-x: hidden;
   
   /*CSS colour variables*/
   --DM-Header-Background: #3d3d3d;
@@ -161,7 +162,10 @@ Interests section
 Footer style
 ====================================*/
 footer {
+  margin-top: 5em;
   padding: 1em;
+  border-top: 0.2em groove var(--Site-Darker-Red);
+  border-bottom: 0.2em groove var(--Site-Darker-Red);
 }
 
 /*====================================
