@@ -7,6 +7,7 @@ body {
   
   /*CSS colour variables*/
   --DM-Header-Background: #3d3d3d;
+  --DM-Card-Gray: #505050;
   --DM-Body-Background: #333;
   --Menu-Btn-Gray: #505050;
   --DM-Text-Colour: #fefffe;
@@ -25,6 +26,10 @@ body {
   size: 16px;
   font-family: 'Vollkorn', Arial, serif;
  font-size: 1em; 
+}
+
+h {
+  font-size: 2em;
 }
 
 /*Define the content area*/
@@ -77,6 +82,9 @@ Main Content
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
+
+  text-align: center;
+  align-items: center;
 }
 
 /*Define flex child*/
@@ -90,7 +98,9 @@ Main Content
   text-align: center;
   align-items: center;
 }
-
+/*====================================
+Index Content
+====================================*/
 /*Define the pfp on index page*/
 #pfp_img {
   border-radius: 50%;
@@ -144,7 +154,9 @@ Interests section
   justify-content: center;
   padding-bottom: 1em;
   width: var(--Album-Card-Width);
-  text-align: left;
+  text-align: center;
+  border-radius: 5%;
+  background: var(--DM-Card-Gray);
 }
 
 .album-img {
@@ -196,4 +208,20 @@ Media queries for content
   .artist-flex {
     height: auto;
   }
+}
+
+
+/*====================================
+Brukerstotte Content
+====================================*/
+
+#brukerstotte-main {
+  display: flex;
+  height: 50em;
+  background: var(--DM-Body-Background);
+}
+
+.brukerstotte-banner {
+  width:60%;
+
 }
