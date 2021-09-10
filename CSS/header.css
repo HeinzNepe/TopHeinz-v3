@@ -102,14 +102,14 @@ header {
 /*====================================
   MEDIA QUERIES
 ====================================*/
-@media (max-width:550px) {
+@media (max-width:567px) {
   /*Style the menu button*/
   .drop-menu > .menu-button {
     background: var(--Menu-Btn-Gray); /* Makes it easier to distinguish between dropdown button and button */ 
   } 
 }
 
-@media (min-width: 550px) {
+@media (min-width: 567px) {
   
   
   /*====================================
@@ -155,7 +155,7 @@ header {
     margin-top: 15px; 
   }
 }
-@media (min-width: 890px) {
+@media (min-width: 950px) {
   /*Query for the header flex parent*/
   .header-container {
     flex-direction: row; /* Places logo on the same line as .main-menu */

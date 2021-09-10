@@ -3,7 +3,6 @@
 ====================================*/
 body {
   overflow:overlay;
-  overflow-x: hidden;
   
   /*CSS colour variables*/
   --DM-Header-Background: #3d3d3d;
@@ -129,9 +128,11 @@ Interests section
 ====================================*/
 .artist-flex {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
+  --Album-Card-Width: 15em;
   height: auto;
   margin: 2em 0 2em 0;
 }
@@ -141,14 +142,15 @@ Interests section
   flex-direction: column;
   justify-content: center;
   padding-bottom: 1em;
-  width: 12em;
+  width: var(--Album-Card-Width);
   text-align: left;
 }
 
 .album-img {
-  width: 12em;
+  width: var(--Album-Card-Width);
   user-select: none;
   border-radius: 5%;
+  margin: 0 5em 0 0
 }
 
 
@@ -166,20 +168,28 @@ footer {
 Media queries for content
 ====================================*/
 
-@media (max-width:550px) {
+@media (max-width:567px) {
   .bio {
     width: 80%;
   }
+
 }
 
-@media (min-width: 550px) {
+@media (min-width: 567px) {
   .bio {
     width: 30em;
   }
+
 }
 
-@media (min-width: 890px) {
+@media (min-width: 950px) {
   .bio {
     width: 50em;
+  }
+}
+
+@media (max-width: 675px) {
+  .artist-flex {
+    height: auto;
   }
 }
