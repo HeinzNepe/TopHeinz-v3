@@ -111,7 +111,7 @@ Main Content
 }
 
 #interests {
-  border-top: 0.2em groove var(--Site-Darker-Red) ;
+  border-top: 0.2em groove var(--Site-Default-Red) ;
   background: var(--DM-Body-Background);
   height: auto;
   padding-top: 2em;
@@ -164,8 +164,8 @@ Footer style
 footer {
   margin-top: 5em;
   padding: 1em;
-  border-top: 0.2em groove var(--Site-Darker-Red);
-  border-bottom: 0.2em groove var(--Site-Darker-Red);
+  border-top: 0.2em groove var(--Site-Default-Red);
+  border-bottom: 0.2em groove var(--Site-Default-Red);
 }
 
 /*====================================
