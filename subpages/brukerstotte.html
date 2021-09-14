@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/CSS/header.css">
 
     <!--Website tab icon-->
-    <link rel="icon" href="/mainbilder/_universal/minilogo.png">
+    <link rel="icon" href="/mainbilder/universal/minilogo.png">
     <title>Henrik Hub</title>
 	
 </head>
@@ -19,11 +19,18 @@
         <div id="header-pre"></div>
     </header>
 
-    <!--TODO Fix banner and basic layout-->
+
     <section class="content-sec">
         <div class="main-flex" id="brukerstotte-main">
-            <img class="brukerstotte-banner" src="/mainbilder/Brukerstotte/Bannercrop.jpg">
+            <img class="brukerstotte-banner" src="/mainbilder/sites/Brukerstotte/Bannercrop.png">
+            <div>
+                <h>Brukerstøtte</h>
+                <br>
+                <p class="brukerstotte-txt">Brukerstøtte is the subject where we learn about supporting end users in all the software and solutions we use.</p>
+                <p class="brukerstotte-txt">So far this year, we've learned about ticketing systems, first and second line helpdesks</p>
+            </div>
         </div>
+
         <!--<h1 style="padding-top:3em;font-size: 5em;">This part is currently under construction. Check back later for new content!</h1>-->
 
     </section>
@@ -35,5 +42,6 @@
     
         <!-- Scripts -->
         <script> console.log("Header Loaded"); $("#header-pre").load("/sections/header.html");</script>
+        <script>console.log("Footer Loaded");$("#footer-pre").load("/sections/footer.html");</script>
     </section>
 </body>

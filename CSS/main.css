@@ -13,6 +13,7 @@ body {
   --DM-Text-Colour: #fefffe;
   --Site-Default-Red: #ed0929;
   --Site-Darker-Red: rgba(179, 8, 31, 0.5);
+
 }
 
 * { 
@@ -25,7 +26,7 @@ body {
   text-decoration: none;
   size: 16px;
   font-family: 'Vollkorn', Arial, serif;
- font-size: 1em; 
+  font-size: 1em;
 }
 
 h {
@@ -37,6 +38,9 @@ h {
   width: 100%;
  }
 
+#footer-pre {
+
+}
 /*====================================
 Scroll bar and marking
 ====================================*/
@@ -81,7 +85,7 @@ Main Content
 .main-flex {
   width: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 
   text-align: center;
   align-items: center;
@@ -161,6 +165,7 @@ Interests section
 
 .album-img {
   width: var(--Album-Card-Width);
+  padding-bottom: 1em;
   user-select: none;
   border-radius: 5%;
   margin: 0 5em 0 0
@@ -191,17 +196,11 @@ Media queries for content
 
 }
 
-@media (min-width: 567px) {
+@media (min-width:567px) {
   .bio {
     width: 30em;
   }
 
-}
-
-@media (min-width: 950px) {
-  .bio {
-    width: 50em;
-  }
 }
 
 @media (max-width: 675px) {
@@ -209,6 +208,15 @@ Media queries for content
     height: auto;
   }
 }
+
+@media (min-width:950px) {
+  .bio {
+    width: 50em;
+  }
+}
+
+
+
 
 
 /*====================================
@@ -221,7 +229,127 @@ Brukerstotte Content
   background: var(--DM-Body-Background);
 }
 
-.brukerstotte-banner {
-  width:60%;
+.brukerstotte-txt {
+  overflow-wrap: normal;
+  line-height: 2em
+}
 
+/*====================================
+Media queries for content
+====================================*/
+@media (max-width:567px) {
+  .brukerstotte-banner{
+    width: 100%;
+  }
+}
+
+@media (min-width:567px) {
+  .brukerstotte-banner {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 675px) {
+  .brukerstotte-banner {
+    width: 100%;
+  }
+}
+@media (min-width:950px) {
+  .brukerstotte-banner {
+    width: 75%;
+  }
+}
+
+
+/*====================================
+driftstotte Content
+====================================*/
+
+#driftstotte-main {
+  display: flex;
+  height: 50em;
+  background: var(--DM-Body-Background);
+}
+
+.driftstotte-txt {
+  overflow-wrap: normal;
+  line-height: 2em
+}
+
+/*====================================
+Media queries for content
+====================================*/
+@media (max-width:567px) {
+  .driftstotte-banner{
+    width: 100%;
+  }
+}
+
+@media (min-width:567px) {
+  .driftstotte-banner {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 675px) {
+  .driftstotte-banner {
+    width: 100%;
+  }
+}
+
+@media (min-width:950px) {
+  .driftstotte-banner {
+    width: 75%;
+  }
+}
+
+
+
+/*====================================
+driftstotte Content
+====================================*/
+
+#utvikling-main {
+  display: flex;
+  height: 50em;
+  background: var(--DM-Body-Background);
+}
+
+.utvikling-txt {
+  overflow-wrap: normal;
+  line-height: 2em
+}
+
+.utvikling-banner {
+  object-fit: contain;
+  max-height: 600px;
+}
+/*====================================
+Media queries for content
+====================================*/
+@media (max-width:567px) {
+  .utvikling-banner{
+    width: 100%;
+  }
+}
+
+@media (min-width:567px) {
+  .utvikling-banner {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 675px) {
+  .utvikling-banner {
+    width: 100%;
+  }
+}
+
+@media (min-width:950px) {
+  .utvikling-banner {
+    width: 75%;
+  }
 }
