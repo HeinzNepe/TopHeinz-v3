@@ -2,21 +2,31 @@
   BASE STYLES
 ====================================*/
 body {
-  overflow: overlay;
+  overflow:overlay;
   overflow-x: hidden;
+
 }
 
+
 /*CSS colour variables*/
-* {
+$DM-Header-Background: #3d3d3d;
+$DM-Card-Gray: #505050;
+$DM-Body-Background: #333;
+$Menu-Btn-Gray: #505050;
+$DM-Text-Colour: #fefffe;
+$Site-Default-Red: #ed0929;
+$Site-Darker-Red: rgba(179, 8, 31, 0.5);
+
+* { 
   /*Define the text*/
-  color: #fefffe;
+  color: $DM-Text-Colour;
   box-sizing: border-box;
   list-style-type: none;
   padding: 0;
   margin: 0;
   text-decoration: none;
   size: 16px;
-  font-family: "Vollkorn", Arial, serif;
+  font-family: 'Vollkorn', Arial, serif;
   font-size: 1em;
 }
 
@@ -27,11 +37,15 @@ h {
 /*Define the content area*/
 .content-sec {
   width: 100%;
-}
+ }
 
+#footer-pre {
+
+}
 /*====================================
 Scroll bar and marking
 ====================================*/
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -39,37 +53,41 @@ Scroll bar and marking
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: none;
+  background: none; 
 }
-
+ 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(179, 8, 31, 0.5);
+  background: $Site-Darker-Red;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ed0929;
+  background: $Site-Default-Red;
 }
 
-::-moz-selection {
+
+::-moz-selection{
+  // Code for Firefox
   color: white;
-  background: rgba(179, 8, 31, 0.5);
+  background: $Site-Darker-Red;
 }
 
-::selection {
+::selection{
   color: white;
-  background: rgba(179, 8, 31, 0.5);
+  background: $Site-Darker-Red;
 }
 
 /*====================================
 Main Content
 ====================================*/
+
 /*Define the flex parent*/
 .main-flex {
   width: 100%;
   flex-direction: column;
   justify-content: space-around;
+
   text-align: center;
   align-items: center;
 }
@@ -77,15 +95,14 @@ Main Content
 /*Define flex child*/
 #main-content {
   width: 100%;
-  background: var(#333);
-  padding: 5em auto 5em auto;
-  /*Top, right, bottom, left*/
+  background: var($DM-Body-Background);
+  padding: 5em auto 5em auto; /*Top, right, bottom, left*/
   display: flex;
+
   justify-content: center;
   text-align: center;
   align-items: center;
 }
-
 /*====================================
 Index Content
 ====================================*/
@@ -104,12 +121,13 @@ Index Content
 /*Custom definitions for bio on index*/
 .bio {
   overflow-wrap: normal;
-  line-height: 2em;
+  line-height: 2em
+
 }
 
 #interests {
-  border-top: 0.2em groove #ed0929;
-  background: #333;
+  border-top: 0.2em groove $Site-Default-Red;
+  background: $DM-Body-Background;
   height: auto;
   padding-top: 2em;
 }
@@ -129,28 +147,35 @@ Interests section
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+
   height: auto;
   margin: 2em 0 2em 0;
 }
+
+$Album-Card-Width: 15em;
 
 .item-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 1em;
-  width: 15em;
+  width: $Album-Card-Width;
   text-align: center;
   border-radius: 5%;
-  background: #505050;
+  background: $DM-Card-Gray;
 }
 
 .album-img {
-  width: 15em;
+  width: $Album-Card-Width;
   padding-bottom: 1em;
   user-select: none;
   border-radius: 5%;
-  margin: 0 5em 0 0;
+  margin: 0 5em 0 0
 }
+
+
+
+
 
 /*====================================
 Footer style
@@ -158,148 +183,175 @@ Footer style
 footer {
   margin-top: 5em;
   padding: 1em;
-  border-top: 0.2em groove var(#ed0929);
-  border-bottom: 0.2em groove var(#ed0929);
+  border-top: 0.2em groove var($Site-Default-Red);
+  border-bottom: 0.2em groove var($Site-Default-Red);
 }
 
 /*====================================
 Media queries for content
 ====================================*/
-@media (max-width: 567px) {
+
+@media (max-width:567px) {
   .bio {
     width: 80%;
   }
+
 }
-@media (min-width: 567px) {
+
+@media (min-width:567px) {
   .bio {
     width: 30em;
   }
+
 }
+
 @media (max-width: 675px) {
   .artist-flex {
     height: auto;
   }
 }
-@media (min-width: 950px) {
+
+@media (min-width:950px) {
   .bio {
     width: 50em;
   }
 }
+
+
+
+
+
 /*====================================
 Brukerstotte Content
 ====================================*/
+
 #brukerstotte-main {
   display: flex;
   height: 50em;
-  background: var(#333);
+  background: var($DM-Body-Background);
 }
 
 .brukerstotte-txt {
   overflow-wrap: normal;
-  line-height: 2em;
+  line-height: 2em
 }
 
 /*====================================
 Media queries for content
 ====================================*/
-@media (max-width: 567px) {
-  .brukerstotte-banner {
+@media (max-width:567px) {
+  .brukerstotte-banner{
     width: 100%;
   }
 }
-@media (min-width: 567px) {
+
+@media (min-width:567px) {
   .brukerstotte-banner {
     width: 80%;
   }
+
 }
+
 @media (max-width: 675px) {
   .brukerstotte-banner {
     width: 100%;
   }
 }
-@media (min-width: 950px) {
+@media (min-width:950px) {
   .brukerstotte-banner {
     width: 75%;
   }
 }
+
+
 /*====================================
 driftstotte Content
 ====================================*/
+
 #driftstotte-main {
   display: flex;
   height: 50em;
-  background: var(#333);
+  background: var($DM-Body-Background);
 }
 
 .driftstotte-txt {
   overflow-wrap: normal;
-  line-height: 2em;
+  line-height: 2em
 }
 
 /*====================================
 Media queries for content
 ====================================*/
-@media (max-width: 567px) {
-  .driftstotte-banner {
+@media (max-width:567px) {
+  .driftstotte-banner{
     width: 100%;
   }
 }
-@media (min-width: 567px) {
+
+@media (min-width:567px) {
   .driftstotte-banner {
     width: 80%;
   }
+
 }
+
 @media (max-width: 675px) {
   .driftstotte-banner {
     width: 100%;
   }
 }
-@media (min-width: 950px) {
+
+@media (min-width:950px) {
   .driftstotte-banner {
     width: 75%;
   }
 }
+
+
+
 /*====================================
 driftstotte Content
 ====================================*/
+
 #utvikling-main {
   display: flex;
   height: 50em;
-  background: var(#333);
+  background: var($DM-Body-Background);
 }
 
 .utvikling-txt {
   overflow-wrap: normal;
-  line-height: 2em;
+  line-height: 2em
 }
 
 .utvikling-banner {
   object-fit: contain;
   max-height: 600px;
 }
-
 /*====================================
 Media queries for content
 ====================================*/
-@media (max-width: 567px) {
-  .utvikling-banner {
+@media (max-width:567px) {
+  .utvikling-banner{
     width: 100%;
   }
 }
-@media (min-width: 567px) {
+
+@media (min-width:567px) {
   .utvikling-banner {
     width: 80%;
   }
+
 }
+
 @media (max-width: 675px) {
   .utvikling-banner {
     width: 100%;
   }
 }
-@media (min-width: 950px) {
+
+@media (min-width:950px) {
   .utvikling-banner {
     width: 75%;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

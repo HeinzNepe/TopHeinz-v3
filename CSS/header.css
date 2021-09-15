@@ -1,7 +1,309 @@
 /* ==========================================
 Header
 ===========================================*/
+/*====================================
+  BASE STYLES
+====================================*/
+body {
+  overflow: overlay;
+  overflow-x: hidden;
+}
 
+/*CSS colour variables*/
+* {
+  /*Define the text*/
+  color: #fefffe;
+  box-sizing: border-box;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  size: 16px;
+  font-family: "Vollkorn", Arial, serif;
+  font-size: 1em;
+}
+
+h {
+  font-size: 2em;
+}
+
+/*Define the content area*/
+.content-sec {
+  width: 100%;
+}
+
+/*====================================
+Scroll bar and marking
+====================================*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(179, 8, 31, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ed0929;
+}
+
+::-moz-selection {
+  color: white;
+  background: rgba(179, 8, 31, 0.5);
+}
+
+::selection {
+  color: white;
+  background: rgba(179, 8, 31, 0.5);
+}
+
+/*====================================
+Main Content
+====================================*/
+/*Define the flex parent*/
+.main-flex {
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+/*Define flex child*/
+#main-content {
+  width: 100%;
+  background: var(#333);
+  padding: 5em auto 5em auto;
+  /*Top, right, bottom, left*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/*====================================
+Index Content
+====================================*/
+/*Define the pfp on index page*/
+#pfp_img {
+  border-radius: 50%;
+  user-select: none;
+}
+
+#selfbio {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  max-width: 70ch;
+}
+
+/*Custom definitions for bio on index*/
+.bio {
+  overflow-wrap: normal;
+  line-height: 2em;
+}
+
+#interests {
+  border-top: 0.2em groove #ed0929;
+  background: #333;
+  height: auto;
+  padding-top: 2em;
+}
+
+.int-bio {
+  display: inline-block;
+  overflow-wrap: normal;
+  line-height: 2em;
+  max-width: 60ch;
+}
+
+/*====================================
+Interests section
+====================================*/
+.artist-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  margin: 2em 0 2em 0;
+}
+
+.item-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1em;
+  width: 15em;
+  text-align: center;
+  border-radius: 5%;
+  background: #505050;
+}
+
+.album-img {
+  width: 15em;
+  padding-bottom: 1em;
+  user-select: none;
+  border-radius: 5%;
+  margin: 0 5em 0 0;
+}
+
+/*====================================
+Footer style
+====================================*/
+footer {
+  margin-top: 5em;
+  padding: 1em;
+  border-top: 0.2em groove var(#ed0929);
+  border-bottom: 0.2em groove var(#ed0929);
+}
+
+/*====================================
+Media queries for content
+====================================*/
+@media (max-width: 567px) {
+  .bio {
+    width: 80%;
+  }
+}
+@media (min-width: 567px) {
+  .bio {
+    width: 30em;
+  }
+}
+@media (max-width: 675px) {
+  .artist-flex {
+    height: auto;
+  }
+}
+@media (min-width: 950px) {
+  .bio {
+    width: 50em;
+  }
+}
+/*====================================
+Brukerstotte Content
+====================================*/
+#brukerstotte-main {
+  display: flex;
+  height: 50em;
+  background: var(#333);
+}
+
+.brukerstotte-txt {
+  overflow-wrap: normal;
+  line-height: 2em;
+}
+
+/*====================================
+Media queries for content
+====================================*/
+@media (max-width: 567px) {
+  .brukerstotte-banner {
+    width: 100%;
+  }
+}
+@media (min-width: 567px) {
+  .brukerstotte-banner {
+    width: 80%;
+  }
+}
+@media (max-width: 675px) {
+  .brukerstotte-banner {
+    width: 100%;
+  }
+}
+@media (min-width: 950px) {
+  .brukerstotte-banner {
+    width: 75%;
+  }
+}
+/*====================================
+driftstotte Content
+====================================*/
+#driftstotte-main {
+  display: flex;
+  height: 50em;
+  background: var(#333);
+}
+
+.driftstotte-txt {
+  overflow-wrap: normal;
+  line-height: 2em;
+}
+
+/*====================================
+Media queries for content
+====================================*/
+@media (max-width: 567px) {
+  .driftstotte-banner {
+    width: 100%;
+  }
+}
+@media (min-width: 567px) {
+  .driftstotte-banner {
+    width: 80%;
+  }
+}
+@media (max-width: 675px) {
+  .driftstotte-banner {
+    width: 100%;
+  }
+}
+@media (min-width: 950px) {
+  .driftstotte-banner {
+    width: 75%;
+  }
+}
+/*====================================
+driftstotte Content
+====================================*/
+#utvikling-main {
+  display: flex;
+  height: 50em;
+  background: var(#333);
+}
+
+.utvikling-txt {
+  overflow-wrap: normal;
+  line-height: 2em;
+}
+
+.utvikling-banner {
+  object-fit: contain;
+  max-height: 600px;
+}
+
+/*====================================
+Media queries for content
+====================================*/
+@media (max-width: 567px) {
+  .utvikling-banner {
+    width: 100%;
+  }
+}
+@media (min-width: 567px) {
+  .utvikling-banner {
+    width: 80%;
+  }
+}
+@media (max-width: 675px) {
+  .utvikling-banner {
+    width: 100%;
+  }
+}
+@media (min-width: 950px) {
+  .utvikling-banner {
+    width: 75%;
+  }
+}
 #Header-Section {
   display: flex;
 }
@@ -9,20 +311,20 @@ Header
 /*====================================
   MAIN HEADER STYLES
 ====================================*/
-
 /*Header section styles*/
 header {
-  background: var(--DM-Header-Background);
-  color: var(--Site-Default-Red);
-  border-bottom: 0.2em groove var(--Site-Default-Red) ;
-  }
+  background: #3d3d3d;
+  color: #ed0929;
+  border-bottom: 0.2em groove #ed0929;
+}
 
 /*Flex parent for logo and menu buttons*/
 .header-container {
   width: 100%;
-  margin: auto; 
+  margin: auto;
   display: flex;
-  flex-direction: column; /* Logo starts stacked on top of nav */
+  flex-direction: column;
+  /* Logo starts stacked on top of nav */
   align-items: center;
 }
 
@@ -37,145 +339,155 @@ header {
 /*====================================
   MENU STYLES
 ====================================*/
-
 /*Flex box for menu buttons*/
 .main-menu {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 25px;  /* Space for logo */
+  margin-top: 25px;
+  /* Space for logo */
   overflow: visible;
-  
-  max-width: 700px;  /* Keeps the buttons getting too far from each other on largest screens */ 
+  max-width: 700px;
+  /* Keeps the buttons getting too far from each other on largest screens */
 }
 
 /*Hyperlink definiton for menu button*/
 .main-menu a {
   width: 100%;
   text-align: center;
-  padding: .75em 1em;
+  padding: 0.75em 1em;
   display: block;
-  border-bottom: 2px solid var(--DM-Text-Colour); 
+  border-bottom: 2px solid #fefffe;
   transition: 0.3s;
 }
 
 /*Hover styles for menu button*/
-.main-menu a:hover{
+.main-menu a:hover {
   font-size: 1.1em;
-  color: var(--Site-Default-Red);
-  border-bottom-color: var(--Site-Default-Red); 
+  color: #ed0929;
+  border-bottom-color: #ed0929;
 }
 
 /*====================================
   DROPDOWN MENU STYLES
 ====================================*/
-  
 /* The hidden-at-first drop menus */
 .drop-menu {
   display: flex;
-  flex-direction: column; /* This never changes */
+  flex-direction: column;
+  /* This never changes */
   align-items: center;
-  width: 100%; /* Allows sub buttons to stretch across button width in main-menu*/
-  transition: max-height .4s, opacity .3s;
+  width: 100%;
+  /* Allows sub buttons to stretch across button width in main-menu*/
+  transition: max-height 0.4s, opacity 0.3s;
   max-height: 0;
   opacity: 0;
-  overflow: hidden; /* Keeps links in drop menu from displaying until height is large enough */
+  overflow: hidden;
+  /* Keeps links in drop menu from displaying until height is large enough */
 }
 
 /*Transition*/
 .drop-menu > .menu-button {
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 /* The dropdown-wrapper wraps both the .main-menu button and drop down menu */
 /* Expands .drop-menu to children height, not setting an expicit height allows variable # of buttons */
-.dropdown-wrapper:hover .drop-menu{
-  max-height: 300px;  
+.dropdown-wrapper:hover .drop-menu {
+  max-height: 300px;
   opacity: 1;
 }
 
 /* The specifity keeps styles from affecting main menu button */
 .dropdown-wrapper:hover > .drop-menu .menu-button {
-  transform: translateY(0%); 
+  transform: translateY(0%);
 }
 
 /*====================================
   MEDIA QUERIES
 ====================================*/
-@media (max-width:567px) {
+@media (max-width: 567px) {
   /*Style the menu button*/
   .drop-menu > .menu-button {
-    background: var(--Menu-Btn-Gray); /* Makes it easier to distinguish between dropdown button and button */ 
-  } 
+    background: #505050;
+    /* Makes it easier to distinguish between dropdown button and button */
+  }
 }
-
 @media (min-width: 567px) {
-  
-  
   /*====================================
     DROP-MENU EFFECTS (LARGER SCREENS)
   ====================================*/
-    /* Resets dropdown styles to not affect the effects. Overflow still set to hidden allows for menu effects like sliding in */
-      .fade-in .menu-button {
-        transition: opacity .5s;
-        opacity: 0;
-      }
-      .dropdown-wrapper:hover .fade-in .menu-button {
-        opacity: 1;
-      }
-  /*==================================*/
+  /* Resets dropdown styles to not affect the effects. Overflow still set to hidden allows for menu effects like sliding in */
+  .fade-in .menu-button {
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
 
+  .dropdown-wrapper:hover .fade-in .menu-button {
+    opacity: 1;
+  }
+
+  /*==================================*/
   /*Query for the header flex parent*/
   .header-container {
     height: 200px;
     width: 90%;
-    justify-content: space-between; /* Pushes logo to top, nav bar all the way down */
-  } 
-  
+    justify-content: space-between;
+    /* Pushes logo to top, nav bar all the way down */
+  }
+
   /*Menu button flex*/
-  .main-menu {   
-    flex-direction: row; /* Horizontal main menu buttons */
-    align-items: flex-start; /* Makes the top of the 'dropdown-wrapper' div stay flush with button top because it's aligned on the cross-axis */
-    height: 48px; /* Setting the height allows the dropdown outside of it's parent's bounds, therefore not compensated for by the flex. */
+  .main-menu {
+    flex-direction: row;
+    /* Horizontal main menu buttons */
+    align-items: flex-start;
+    /* Makes the top of the 'dropdown-wrapper' div stay flush with button top because it's aligned on the cross-axis */
+    height: 48px;
+    /* Setting the height allows the dropdown outside of it's parent's bounds, therefore not compensated for by the flex. */
     margin: 0;
     justify-content: center;
   }
-    
+
   /*Style the buttons on header*/
   .main-menu > .menu-button {
-    background: var(--DM-Header-Background); /* Makes it easier to distinguish between dropdown button and button */ 
+    background: #3d3d3d;
+    /* Makes it easier to distinguish between dropdown button and button */
     width: 23%;
     max-width: 150px;
     z-index: 1;
   }
+
   /*Logo*/
   .logo {
     max-width: 130px;
     max-height: 130px;
-    margin-top: 15px; 
+    margin-top: 15px;
   }
 }
 @media (min-width: 950px) {
   /*Query for the header flex parent*/
   .header-container {
-    flex-direction: row; /* Places logo on the same line as .main-menu */
+    flex-direction: row;
+    /* Places logo on the same line as .main-menu */
     /*justify-content: space-around;*/
     height: 160px;
-  } 
+  }
 
   /*Menu button flex*/
   .main-menu {
     width: 60%;
     justify-content: space-evenly;
   }
-  
+
   /*Style the buttons*/
   .main-menu > .menu-button {
-    background: var(--DM-Header-Background);
+    background: #3d3d3d;
   }
-  
+
   /*Logo style*/
   .logo {
     margin: 0;
   }
 }
+
+/*# sourceMappingURL=header.css.map */
