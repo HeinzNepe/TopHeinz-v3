@@ -16,7 +16,15 @@
 	<link rel="stylesheet" type="text/css" href="/CSS/header.css">
 
     <!--Website tab icon-->
-    <link rel="icon" href="/mainbilder/universal/minilogo.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/mainbilder/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/mainbilder/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/mainbilder/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/mainbilder/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/mainbilder/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/mainbilder/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ff0000">
+	<meta name="msapplication-config" content="/mainbilder/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
     <title>Henrik Hub</title>
 	
 </head>
@@ -53,36 +61,11 @@
 			<p1 class="int-bio">Not to mention, I love listening to music such as</p1>
 
 			<!--TODO Fix the sad spacing between albums-->
-			<div class="artist-flex">
-				<div class="item-flex">
-					<a href="https://open.spotify.com/album/2WT1pbYjLJciAR26yMebkH?si=ol6M9HH3REyAvtiLAW1DTQ&dl_branch=1" target="_blank">
-						<img alt="imageload failed" class="album-img" src="mainbilder/sites/Index/Albums/TheDarkSideOfTheMoon.jpg">
-					</a>
-					<i>The dark side of the moon</i>
-					<b>By Pink Floyd</b>
-					<small>Album</small>
-				</div>
+			<div class="artist-flex" id="artist-input-js">
 
-				<div class="item-flex">
-					<a href="https://open.spotify.com/album/36AWYqwFvbAbxxCFgbRfJo?si=8S7kVxyhS42KZEoFH61I3g&dl_branch=1" target="_blank">
-						<img alt="imageload failed" class="album-img" src="mainbilder/sites/Index/Albums/Chronologic.jpg">
-					</a>
-					<i>Chronologic</i>
-					<b>By Caravan Palace</b>
-					<small>Album</small>
-				</div>
-
-				<div class="item-flex">
-					<a href="https://open.spotify.com/album/5I9K0u8r52jp4Y2bF8mOaz?si=AMV0gq0xQiuv_AfTaSibZA&dl_branch=1" target="_blank">
-						<img alt="imageload failed" class="album-img" src="mainbilder/sites/Index/Albums/SongMachine.jpg">
-					</a>
-					<i>Song machine</i>
-					<b>By Gorillaz</b>
-				<small>Album</small>
-				</div>
 
 			</div>
-
+			<div id="Testing"></div>
 			</section>
 			<footer>
 				<div id="footer-pre"></div>
@@ -98,11 +81,12 @@
 
 	<!-- Script import -->
 	<script src="/JS/lib/jquery-3.6.0.min.js"></script>
-	<script src="/JS/age.js"></script>
+	<script src="/JS/index/age.js"></script>
 
 	<!-- Scripts -->
 	<script>console.log("Header Loaded");$("#header-pre").load("/sections/header.html");</script>
 	<script>console.log("Footer Loaded");$("#footer-pre").load("/sections/footer.html");</script>
+	<script src="/JS/index/index.js"></script>
 </section>
 </body>
 </html>

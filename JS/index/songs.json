@@ -1,0 +1,25 @@
+[
+  {
+    "name": "The dark side of the moon",
+    "artist": "Pink Floyd",
+    "image" : "/mainbilder/sites/Index/Albums/TheDarkSideOfTheMoon.jpg",
+    "link": "https://open.spotify.com/album/2WT1pbYjLJciAR26yMebkH?si=ol6M9HH3REyAvtiLAW1DTQ&dl_branch=1",
+    "type" : "Album"
+  },
+
+  {
+    "name": "Chronologic",
+    "artist": "Caravan Palace",
+    "image" : "/mainbilder/sites/Index/Albums/Chronologic.jpg",
+    "link": "https://open.spotify.com/album/36AWYqwFvbAbxxCFgbRfJo?si=8S7kVxyhS42KZEoFH61I3g&dl_branch=1",
+    "type" : "Album"
+  },
+
+  {
+    "name": "Song machine",
+    "artist": "Gorillaz",
+    "image" : "/mainbilder/sites/Index/Albums/SongMachine.jpg",
+    "link": "https://open.spotify.com/album/5I9K0u8r52jp4Y2bF8mOaz?si=AMV0gq0xQiuv_AfTaSibZA&dl_branch=1",
+    "type" : "Album"
+  }
+]
