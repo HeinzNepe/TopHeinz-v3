@@ -133,6 +133,8 @@ Interests section
   margin: 2em 0 2em 0;
 }
 
+
+
 .item-flex {
   display: flex;
   flex-direction: column;
@@ -142,7 +144,15 @@ Interests section
   text-align: center;
   border-radius: 5%;
   background: #505050;
+
 }
+
+/*TODO Fix hover thing on artist cards*/
+
+/* transition: all 300ms ease;
+.item-flex :hover {
+  width: 16em;
+}*/
 
 .album-img {
   width: 15em;

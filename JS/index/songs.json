@@ -6,6 +6,13 @@
     "link": "https://open.spotify.com/album/2WT1pbYjLJciAR26yMebkH?si=ol6M9HH3REyAvtiLAW1DTQ&dl_branch=1",
     "type" : "Album"
   },
+  {
+    "name": "Wish you were here",
+    "artist": "Pink Floyd",
+    "image" : "/mainbilder/sites/Index/Music/WishYouWereHere.jpg",
+    "link": "https://open.spotify.com/album/6uvBKDGlJAYLH5Vy6RQVsc?si=HXTSNYv-SNuG1mXVEH5QTA&dl_branch=1",
+    "type" : "Album"
+  },
 
   {
     "name": "Chronologic",
@@ -24,10 +31,41 @@
   },
 
   {
+    "name": "Inside",
+    "artist": "Bo Burnham",
+    "image" : "/mainbilder/sites/Index/Music/Inside.jpeg",
+    "link": "https://open.spotify.com/album/1e5OlE0EY5fucq6GIU1xi3?si=OxaX4EF4QISV0MVPkpm3vw&dl_branch=1",
+    "type" : "Album"
+  },
+
+  {
+    "name": "Hus",
+    "artist": "Kakkmaddafakka",
+    "image": "/mainbilder/sites/Index/Music/Hus.jpg",
+    "link": "https://open.spotify.com/album/35s0wvVsAO5oW6dgSjfDyt?si=uXK-ok5LToWNcAC4mJmSrA&dl_branch=1"
+  },
+
+  {
     "name" : "Good Vibes",
     "artist": "Henrik Xavier Nepstad",
-    "image": "/mainbilder/sites/Index/Music/GoodVibes.png",
+    "image": "/mainbilder/sites/Index/Music/Lofi.png",
     "link": "https://open.spotify.com/playlist/6WIRtcuaqD3WwAmijskMWn?si=e1a2ece05604426b",
     "type": "Playlist"
+  },
+
+  {
+    "name": "Eldre Musikk",
+    "artist": "Henrik Xavier Nepstad",
+    "image": "/mainbilder/sites/Index/Music/GeorgeMichael.jpg",
+    "link": "https://open.spotify.com/playlist/4y6NM1So7wdvKfhMyhaPt0?si=67c47ae1a410456c",
+    "type": "Playlist"
+  },
+
+  {
+    "name": "Lost in the rythm",
+    "artist": "Jamie Berry",
+    "image": "/mainbilder/sites/Index/Music/LostInTheRythm.jpg",
+    "link": "https://open.spotify.com/track/35nsl8YiBIYw1YdNmkmhnk?si=529c7c68bbe84544",
+    "type": "Song"
   }
 ]
