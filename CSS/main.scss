@@ -95,7 +95,7 @@ Main Content
 /*Define flex child*/
 #main-content {
   width: 100%;
-  background: var($DM-Body-Background);
+  background: $DM-Body-Background;
   padding: 5em auto 5em auto; /*Top, right, bottom, left*/
   display: flex;
 
@@ -183,8 +183,8 @@ Footer style
 footer {
   margin-top: 5em;
   padding: 1em;
-  border-top: 0.2em groove var($Site-Default-Red);
-  border-bottom: 0.2em groove var($Site-Default-Red);
+  border-top: 0.2em groove $Site-Default-Red;
+  border-bottom: 0.2em groove $Site-Default-Red;
 }
 
 /*====================================
@@ -228,7 +228,7 @@ Brukerstotte Content
 #brukerstotte-main {
   display: flex;
   height: 50em;
-  background: var($DM-Body-Background);
+  background: $DM-Body-Background;
 }
 
 .brukerstotte-txt {
@@ -271,7 +271,7 @@ driftstotte Content
 #driftstotte-main {
   display: flex;
   height: 50em;
-  background: var($DM-Body-Background);
+  background: $DM-Body-Background;
 }
 
 .driftstotte-txt {
@@ -316,7 +316,7 @@ driftstotte Content
 #utvikling-main {
   display: flex;
   height: 50em;
-  background: var($DM-Body-Background);
+  background: $DM-Body-Background;
 }
 
 .utvikling-txt {

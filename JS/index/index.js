@@ -13,7 +13,7 @@ fetch("/JS/index/songs.json").then(response=>response.json()).then(data=>
 					<small>${song.type}</small>
 				</div>
             `
-            console.log(`${song.name}, ${song.artist}`)
+            console.log(`${song.type}, ${song.name}, ${song.artist}`)
         }
     }
 )
