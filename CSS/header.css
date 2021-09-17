@@ -32,6 +32,12 @@ h {
   width: 100%;
 }
 
+#footer-pre {
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
 /*====================================
 Scroll bar and marking
 ====================================*/
@@ -160,10 +166,17 @@ Interests section
 Footer style
 ====================================*/
 footer {
-  margin-top: 5em;
+  margin: 0;
   padding: 1em;
+  background: #333;
   border-top: 0.2em groove #ed0929;
   border-bottom: 0.2em groove #ed0929;
+}
+
+.foot {
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
 }
 
 /*====================================
@@ -309,7 +322,39 @@ Media queries for content
 songinfo Content
 ====================================*/
 #more-songinfo {
-  background: black;
+  background: #333;
+  height: auto;
+  padding-top: 2em;
+  margin: 0;
+}
+
+.info-artist-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  margin: 2em 0 2em 0;
+}
+
+.info-item-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1em;
+  width: 15em;
+  text-align: center;
+  border-radius: 5%;
+  background: #505050;
+  margin: 2em;
+}
+
+.info-album-img {
+  width: 15em;
+  padding-bottom: 1em;
+  user-select: none;
+  border-radius: 5%;
+  margin: 0 5em 0 0;
 }
 
 #Header-Section {
