@@ -18,7 +18,6 @@ body {
   padding: 0;
   margin: 0;
   text-decoration: none;
-  size: 16px;
   font-family: "Vollkorn", Arial, serif;
   font-size: 1em;
 }
@@ -156,6 +155,38 @@ Interests section
 
 .album-img {
   width: 15em;
+  padding-bottom: 1em;
+  user-select: none;
+  border-radius: 5%;
+  margin: 0 5em 0 0;
+}
+
+/*====================================
+Music details flex section
+====================================*/
+.info-artist-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  margin: 2em 0 2em 0;
+}
+
+.info-item-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1em;
+  width: 30em;
+  text-align: center;
+  border-radius: 5%;
+  background: #505050;
+  margin: 2em;
+}
+
+.info-album-img {
+  width: 30em;
   padding-bottom: 1em;
   user-select: none;
   border-radius: 5%;
@@ -318,45 +349,6 @@ Media queries for content
     width: 75%;
   }
 }
-/*====================================
-songinfo Content
-====================================*/
-#more-songinfo {
-  background: #333;
-  height: auto;
-  padding-top: 2em;
-  margin: 0;
-}
-
-.info-artist-flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  height: auto;
-  margin: 2em 0 2em 0;
-}
-
-.info-item-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 1em;
-  width: 15em;
-  text-align: center;
-  border-radius: 5%;
-  background: #505050;
-  margin: 2em;
-}
-
-.info-album-img {
-  width: 15em;
-  padding-bottom: 1em;
-  user-select: none;
-  border-radius: 5%;
-  margin: 0 5em 0 0;
-}
-
 #Header-Section {
   display: flex;
 }

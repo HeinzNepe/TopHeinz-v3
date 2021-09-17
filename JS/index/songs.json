@@ -1,82 +1,93 @@
 [
+
+  //TODO add alternative links to things
   {
     "id" : 0,
+    "type" : "Album",
     "name": "The dark side of the moon",
     "artist": "Pink Floyd",
     "image" : "/mainbilder/sites/Index/Music/TheDarkSideOfTheMoon.jpg",
-    "link": "https://open.spotify.com/album/2WT1pbYjLJciAR26yMebkH?si=ol6M9HH3REyAvtiLAW1DTQ&dl_branch=1",
-    "type" : "Album"
+    "youtube-link": "",
+    "spotify-link": "https://open.spotify.com/album/2WT1pbYjLJciAR26yMebkH?si=ol6M9HH3REyAvtiLAW1DTQ&dl_branch=1",
   },
 
   {
     "id" : 1,
+    "type" : "Album",
     "name": "Wish you were here",
     "artist": "Pink Floyd",
     "image" : "/mainbilder/sites/Index/Music/WishYouWereHere.jpg",
-    "link": "https://open.spotify.com/album/6uvBKDGlJAYLH5Vy6RQVsc?si=HXTSNYv-SNuG1mXVEH5QTA&dl_branch=1",
-    "type" : "Album"
+    "youtube-link": "",
+    "spotify-link": "https://open.spotify.com/album/6uvBKDGlJAYLH5Vy6RQVsc?si=HXTSNYv-SNuG1mXVEH5QTA&dl_branch=1",
   },
 
   {
     "id" : 2,
+    "type" : "Album",
     "name": "Chronologic",
     "artist": "Caravan Palace",
     "image" : "/mainbilder/sites/Index/Music/Chronologic.jpg",
-    "link": "https://open.spotify.com/album/36AWYqwFvbAbxxCFgbRfJo?si=8S7kVxyhS42KZEoFH61I3g&dl_branch=1",
-    "type" : "Album"
+    "youtube-link": "",
+    "spotify-link": "https://open.spotify.com/album/36AWYqwFvbAbxxCFgbRfJo?si=8S7kVxyhS42KZEoFH61I3g&dl_branch=1"
   },
 
   {
     "id" : 3,
+    "type" : "Album",
     "name": "Song machine",
     "artist": "Gorillaz",
     "image" : "/mainbilder/sites/Index/Music/SongMachine.jpg",
-    "link": "https://open.spotify.com/album/5I9K0u8r52jp4Y2bF8mOaz?si=AMV0gq0xQiuv_AfTaSibZA&dl_branch=1",
-    "type" : "Album"
+    "youtube-link": "",
+    "spotify-link": "https://open.spotify.com/album/5I9K0u8r52jp4Y2bF8mOaz?si=AMV0gq0xQiuv_AfTaSibZA&dl_branch=1"
   },
 
   {
     "id" : 4,
+    "type" : "Album",
     "name": "Inside",
     "artist": "Bo Burnham",
     "image" : "/mainbilder/sites/Index/Music/Inside.jpeg",
-    "link": "https://open.spotify.com/album/1e5OlE0EY5fucq6GIU1xi3?si=OxaX4EF4QISV0MVPkpm3vw&dl_branch=1",
-    "type" : "Album"
+    "youtube-link": "",
+    "spotify-link": "https://open.spotify.com/album/1e5OlE0EY5fucq6GIU1xi3?si=OxaX4EF4QISV0MVPkpm3vw&dl_branch=1"
   },
 
   {
     "id" : 5,
+    "type": "Album",
     "name": "Hus",
     "artist": "Kakkmaddafakka",
     "image": "/mainbilder/sites/Index/Music/Hus.jpg",
-    "link": "https://open.spotify.com/album/35s0wvVsAO5oW6dgSjfDyt?si=uXK-ok5LToWNcAC4mJmSrA&dl_branch=1",
-    "type": "Album"
+    "youtube-link": "",
+    "spotify-link": "https://open.spotify.com/album/35s0wvVsAO5oW6dgSjfDyt?si=uXK-ok5LToWNcAC4mJmSrA&dl_branch=1"
   },
 
   {
     "id" : 6,
+    "type": "Playlist",
     "name" : "Good Vibes",
     "artist": "Henrik Xavier Nepstad",
     "image": "/mainbilder/sites/Index/Music/Lofi.png",
-    "link": "https://open.spotify.com/playlist/6WIRtcuaqD3WwAmijskMWn?si=e1a2ece05604426b",
-    "type": "Playlist"
+    "youtube-link": "",
+    "spotify-link": "https://open.spotify.com/playlist/6WIRtcuaqD3WwAmijskMWn?si=e1a2ece05604426b"
   },
 
   {
     "id" : 7,
+    "type": "Playlist",
     "name": "Eldre Musikk",
     "artist": "Henrik Xavier Nepstad",
     "image": "/mainbilder/sites/Index/Music/GeorgeMichael.jpg",
-    "link": "https://open.spotify.com/playlist/4y6NM1So7wdvKfhMyhaPt0?si=67c47ae1a410456c",
-    "type": "Playlist"
+    "youtube-link": "",
+    "spotify-link": "https://open.spotify.com/playlist/4y6NM1So7wdvKfhMyhaPt0?si=67c47ae1a410456c"
   },
 
   {
     "id" : 8,
+    "type": "Song",
     "name": "Lost in the rythm",
     "artist": "Jamie Berry",
     "image": "/mainbilder/sites/Index/Music/LostInTheRythm.jpg",
-    "link": "https://open.spotify.com/track/35nsl8YiBIYw1YdNmkmhnk?si=529c7c68bbe84544",
-    "type": "Song"
+    "youtube-link": "",
+    "spotify-link": "https://open.spotify.com/track/35nsl8YiBIYw1YdNmkmhnk?si=529c7c68bbe84544"
   }
 ]

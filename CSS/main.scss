@@ -16,6 +16,7 @@ $Menu-Btn-Gray: #505050;
 $DM-Text-Colour: #fefffe;
 $Site-Default-Red: #ed0929;
 $Site-Darker-Red: rgba(179, 8, 31, 0.5);
+$song-info: 30em;
 
 * { 
   /*Define the text*/
@@ -25,7 +26,6 @@ $Site-Darker-Red: rgba(179, 8, 31, 0.5);
   padding: 0;
   margin: 0;
   text-decoration: none;
-  size: 16px;
   font-family: 'Vollkorn', Arial, serif;
   font-size: 1em;
 }
@@ -176,7 +176,40 @@ $Album-Card-Width: 15em;
   margin: 0 5em 0 0
 }
 
+/*====================================
+Music details flex section
+====================================*/
+.info-artist-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 
+  height: auto;
+  margin: 2em 0 2em 0;
+}
+
+
+
+.info-item-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1em;
+  width: 30em;
+  text-align: center;
+  border-radius: 5%;
+  background: $DM-Card-Gray;
+  margin: 2em;
+}
+
+.info-album-img {
+  width: 30em;
+  padding-bottom: 1em;
+  user-select: none;
+  border-radius: 5%;
+  margin: 0 5em 0 0
+}
 
 
 
@@ -368,45 +401,3 @@ Media queries for content
 
 
 
-/*====================================
-songinfo Content
-====================================*/
-
-#more-songinfo {
-  background: $DM-Body-Background;
-  height: auto;
-  padding-top: 2em;
-  margin:0;
-}
-
-.info-artist-flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-
-  height: auto;
-  margin: 2em 0 2em 0;
-}
-
-$Album-infoCard-Width: 15em;
-
-.info-item-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 1em;
-  width: $Album-infoCard-Width;
-  text-align: center;
-  border-radius: 5%;
-  background: $DM-Card-Gray;
-  margin: 2em;
-}
-
-.info-album-img {
-  width: $Album-infoCard-Width;
-  padding-bottom: 1em;
-  user-select: none;
-  border-radius: 5%;
-  margin: 0 5em 0 0
-}

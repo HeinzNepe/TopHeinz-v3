@@ -162,6 +162,42 @@ Interests section
   margin: 0 5em 0 0;
 }
 
+
+/*====================================
+Info artist
+====================================*/
+.info-artist-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  margin: 2em 0 2em 0;
+}
+
+
+
+.info-item-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1em;
+  width: 15em;
+  text-align: center;
+  border-radius: 5%;
+  background: #505050;
+
+}
+
+
+
+.info-album-img {
+  width: 15em;
+  padding-bottom: 1em;
+  user-select: none;
+  border-radius: 5%;
+  margin: 0 5em 0 0;
+}
 /*====================================
 Footer style
 ====================================*/
@@ -313,3 +349,5 @@ Media queries for content
 }
 
 /*# sourceMappingURL=main.css.map */
+
+

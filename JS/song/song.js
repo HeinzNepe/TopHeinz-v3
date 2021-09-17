@@ -8,17 +8,16 @@ fetch("/JS/index/songs.json").then(response=>response.json()).then(data=>{
 
     for(const song of data) {
         if(song.id.toString()===songinfo) {
-            document.querySelector("#more-songinfo").innerHTML+=`
-                <div class="info-item-flex">
-                    <a href="${song.link}" target="_blank">
-                        <img alt="imageload failed" class="album-img" src="${song.image}">
-                    </a>
+            document.querySelector("#more-songinfo").innerHTML=`
+                <div class="info-item-flex">  
+                    <img alt="imageload failed" class="info-album-img" src="${song.image}">
                     <i>${song.name}</i>
                     <b>By ${song.artist}</b>
                     <small>${song.type}</small>
                 </div>
             `
         }
+
     }
 
 
