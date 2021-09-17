@@ -1,12 +1,15 @@
 [
   {
+    "id" : 0,
     "name": "The dark side of the moon",
     "artist": "Pink Floyd",
     "image" : "/mainbilder/sites/Index/Music/TheDarkSideOfTheMoon.jpg",
     "link": "https://open.spotify.com/album/2WT1pbYjLJciAR26yMebkH?si=ol6M9HH3REyAvtiLAW1DTQ&dl_branch=1",
     "type" : "Album"
   },
+
   {
+    "id" : 1,
     "name": "Wish you were here",
     "artist": "Pink Floyd",
     "image" : "/mainbilder/sites/Index/Music/WishYouWereHere.jpg",
@@ -15,6 +18,7 @@
   },
 
   {
+    "id" : 2,
     "name": "Chronologic",
     "artist": "Caravan Palace",
     "image" : "/mainbilder/sites/Index/Music/Chronologic.jpg",
@@ -23,6 +27,7 @@
   },
 
   {
+    "id" : 3,
     "name": "Song machine",
     "artist": "Gorillaz",
     "image" : "/mainbilder/sites/Index/Music/SongMachine.jpg",
@@ -31,6 +36,7 @@
   },
 
   {
+    "id" : 4,
     "name": "Inside",
     "artist": "Bo Burnham",
     "image" : "/mainbilder/sites/Index/Music/Inside.jpeg",
@@ -39,6 +45,7 @@
   },
 
   {
+    "id" : 5,
     "name": "Hus",
     "artist": "Kakkmaddafakka",
     "image": "/mainbilder/sites/Index/Music/Hus.jpg",
@@ -47,6 +54,7 @@
   },
 
   {
+    "id" : 6,
     "name" : "Good Vibes",
     "artist": "Henrik Xavier Nepstad",
     "image": "/mainbilder/sites/Index/Music/Lofi.png",
@@ -55,6 +63,7 @@
   },
 
   {
+    "id" : 7,
     "name": "Eldre Musikk",
     "artist": "Henrik Xavier Nepstad",
     "image": "/mainbilder/sites/Index/Music/GeorgeMichael.jpg",
@@ -63,6 +72,7 @@
   },
 
   {
+    "id" : 8,
     "name": "Lost in the rythm",
     "artist": "Jamie Berry",
     "image": "/mainbilder/sites/Index/Music/LostInTheRythm.jpg",
