@@ -193,6 +193,10 @@ Music details flex section
   margin: 0 5em 0 0;
 }
 
+.music-link {
+  text-decoration: underline;
+}
+
 /*====================================
 Footer style
 ====================================*/

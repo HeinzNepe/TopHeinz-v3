@@ -14,6 +14,9 @@ fetch("/JS/index/songs.json").then(response=>response.json()).then(data=>{
                     <i>${song.name}</i>
                     <b>By ${song.artist}</b>
                     <small>${song.type}</small>
+                    
+                    <a class="music-link" href="${song.youtube}">Youtube</a>
+                    <a class="music-link" href="${song.spotify}">Spotify</a>
                 </div>
             `
         }
