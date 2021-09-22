@@ -148,6 +148,7 @@ Interests section
 ====================================*/
 .artist-flex {
   display: flex;
+  gap: 1.5em;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
@@ -175,7 +176,6 @@ $Album-Card-Width: 15em;
   padding-bottom: 1em;
   user-select: none;
   border-radius: 5%;
-  margin: 0 5em 0 0
 }
 
 /*====================================
