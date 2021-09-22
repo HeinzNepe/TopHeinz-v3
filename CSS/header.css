@@ -118,7 +118,7 @@ Index Content
 }
 
 #interests {
-  border-top: 0.2em groove #ed0929;
+  /*border-top: 0.2em groove $Site-Default-Red;*/
   background: #333;
   height: auto;
   padding-top: 2em;
