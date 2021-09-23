@@ -61,6 +61,16 @@
 
   {
     "id" : 6,
+    "type": "Album",
+    "name": "Demon days",
+    "artist": "Gorillaz",
+    "image": "/mainbilder/sites/Index/Music/DemonDays.jpg",
+    "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_n6OIG6WH-BVE-xbdyDfjQeydPbN6l9tF4",
+    "spotify": "https://open.spotify.com/album/0bUTHlWbkSQysoM3VsWldT?si=BEC9e-IwSNCmXY23GBvy8A&dl_branch=1"
+  },
+
+  {
+    "id" : 7,
     "type": "Playlist (spotify)",
     "name" : "Good Vibes",
     "artist": "Henrik Xavier Nepstad",
@@ -70,7 +80,7 @@
   },
 
   {
-    "id" : 7,
+    "id" : 8,
     "type": "Playlist (spotify)",
     "name": "Eldre Musikk",
     "artist": "Henrik Xavier Nepstad",
@@ -80,7 +90,7 @@
   },
 
   {
-    "id" : 8,
+    "id" : 9,
     "type": "Song",
     "name": "Lost in the rythm",
     "artist": "Jamie Berry",
