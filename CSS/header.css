@@ -1,61 +1,86 @@
 /* ==========================================
 Header
 ===========================================*/
-/*====================================
-  BASE STYLES
-====================================*/
+/* STYLESHEET TABLE OF CONTENTS
+    1 Setup
+        1.1 Variables
+        1.2 Fonts
+        1.3 HTML and body styling
+          1.3.1 Flex
+        1.4 Scrollbar and highlight
+    2 General elements
+        2.1 Titles
+    3 Reusable sections
+        3.1 Header
+        3.2 Content sec
+        3.3 Footer
+    4 Specific sections
+        4.1 Home page
+            4.1.1 About me section
+            4.1.2 Songs
+            4.1.3 Media Queries
+        4.2 Song Details
+        4.3 Brukerstotte
+            4.3.1 Html
+            4.3.2 Media Queries
+        4.4 Driftstotte
+            4.4.1 Html
+            4.4.2 Media Queries
+        4.5 Utvikling
+            4.5.1 Html
+            4.5.2 Media Queries
+    5 Useless elements
+ */
+* {
+  font-family: "Vollkorn", Arial, serif;
+  font-size: 1em;
+}
+
 body {
   overflow: overlay;
   overflow-x: hidden;
 }
 
-/*CSS colour variables*/
 * {
-  /*Define the text*/
   color: #fefffe;
   box-sizing: border-box;
   list-style-type: none;
   padding: 0;
   margin: 0;
   text-decoration: none;
-  font-family: "Vollkorn", Arial, serif;
-  font-size: 1em;
 }
 
-h {
-  font-size: 2em;
-}
-
-/*Define the content area*/
-.content-sec {
+.main-flex {
   width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
-#footer-pre {
-  justify-items: center;
+#main-content {
+  width: 100%;
+  background: #333;
+  padding: 5em auto 5em auto;
+  display: flex;
   justify-content: center;
-  justify-self: center;
+  text-align: center;
+  align-items: center;
 }
 
-/*====================================
-Scroll bar and marking
-====================================*/
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: none;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(179, 8, 31, 0.5);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #ed0929;
 }
@@ -70,35 +95,28 @@ Scroll bar and marking
   background: rgba(179, 8, 31, 0.5);
 }
 
-/*====================================
-Main Content
-====================================*/
-/*Define the flex parent*/
-.main-flex {
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-around;
-  display: flex;
-  text-align: center;
-  align-items: center;
+h {
+  font-size: 2em;
 }
 
-/*Define flex child*/
-#main-content {
+.content-sec {
   width: 100%;
-  background: #333;
-  padding: 5em auto 5em auto;
-  /*Top, right, bottom, left*/
-  display: flex;
+}
+
+#footer-pre {
+  justify-items: center;
   justify-content: center;
-  text-align: center;
-  align-items: center;
+  justify-self: center;
 }
 
-/*====================================
-Index Content
-====================================*/
-/*Define the pfp on index page*/
+footer {
+  margin: 0;
+  padding: 1em;
+  background: #333;
+  border-top: 0.2em groove #ed0929;
+  border-bottom: 0.2em groove #ed0929;
+}
+
 #pfp_img {
   border-radius: 50%;
   user-select: none;
@@ -111,14 +129,12 @@ Index Content
   display: revert;
 }
 
-/*Custom definitions for bio on index*/
 .bio {
   overflow-wrap: normal;
   line-height: 2em;
 }
 
 #interests {
-  /*border-top: 0.2em groove $Site-Default-Red;*/
   background: #333;
   height: auto;
   padding-top: 2em;
@@ -131,9 +147,6 @@ Index Content
   max-width: 60ch;
 }
 
-/*====================================
-Interests section
-====================================*/
 .artist-flex {
   display: flex;
   gap: 1.5em;
@@ -163,9 +176,26 @@ Interests section
   border-radius: 5%;
 }
 
-/*====================================
-Music details flex section
-====================================*/
+@media (max-width: 567px) {
+  .bio {
+    width: 80%;
+  }
+}
+@media (min-width: 567px) {
+  .bio {
+    width: 30em;
+  }
+}
+@media (max-width: 675px) {
+  .artist-flex {
+    height: auto;
+  }
+}
+@media (min-width: 950px) {
+  .bio {
+    width: 50em;
+  }
+}
 .info-artist-flex {
   display: flex;
   flex-wrap: wrap;
@@ -199,49 +229,6 @@ Music details flex section
   text-decoration: underline;
 }
 
-/*====================================
-Footer style
-====================================*/
-footer {
-  margin: 0;
-  padding: 1em;
-  background: #333;
-  border-top: 0.2em groove #ed0929;
-  border-bottom: 0.2em groove #ed0929;
-}
-
-.foot {
-  justify-items: center;
-  justify-content: center;
-  justify-self: center;
-}
-
-/*====================================
-Media queries for content
-====================================*/
-@media (max-width: 567px) {
-  .bio {
-    width: 80%;
-  }
-}
-@media (min-width: 567px) {
-  .bio {
-    width: 30em;
-  }
-}
-@media (max-width: 675px) {
-  .artist-flex {
-    height: auto;
-  }
-}
-@media (min-width: 950px) {
-  .bio {
-    width: 50em;
-  }
-}
-/*====================================
-Brukerstotte Content
-====================================*/
 #brukerstotte-main {
   display: flex;
   height: 50em;
@@ -253,9 +240,6 @@ Brukerstotte Content
   line-height: 2em;
 }
 
-/*====================================
-Media queries for content
-====================================*/
 @media (max-width: 567px) {
   .brukerstotte-banner {
     width: 100%;
@@ -276,9 +260,6 @@ Media queries for content
     width: 75%;
   }
 }
-/*====================================
-driftstotte Content
-====================================*/
 #driftstotte-main {
   display: flex;
   height: 50em;
@@ -290,9 +271,6 @@ driftstotte Content
   line-height: 2em;
 }
 
-/*====================================
-Media queries for content
-====================================*/
 @media (max-width: 567px) {
   .driftstotte-banner {
     width: 100%;
@@ -313,9 +291,6 @@ Media queries for content
     width: 75%;
   }
 }
-/*====================================
-driftstotte Content
-====================================*/
 #utvikling-main {
   display: flex;
   height: 50em;
@@ -332,9 +307,6 @@ driftstotte Content
   max-height: 600px;
 }
 
-/*====================================
-Media queries for content
-====================================*/
 @media (max-width: 567px) {
   .utvikling-banner {
     width: 100%;
