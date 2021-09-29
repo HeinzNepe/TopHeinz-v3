@@ -96,8 +96,21 @@
 	<!-- Script import -->
 	<script src="/JS/lib/jquery-3.6.0.min.js"></script>
 	<script src="/JS/index/age.js"></script>
+	<script>
 
-	<!-- Scripts -->
+	const reps = [1,2,3,4,5,6,7,8,9,0]
+	let text = 0;
+	for (let i = 0; i < reps.length; i++) {
+		text = reps[i];
+		console.log(text)
+		if(reps[0]) {
+			console.log("Swiggity swoo " + reps[i])
+		}
+	}
+
+	</script>
+
+	<!-- JQuery -->
 	<script>console.log("Header Loaded");$("#header-pre").load("/sections/header.html");</script>
 	<script>console.log("Footer Loaded");$("#footer-pre").load("/sections/footer.html");</script>
 	<script>console.log("Easter egg Loaded");$("#hid-img").load("/mainbilder/sites/Index/eastereggsmol.svg");</script>

@@ -15,7 +15,7 @@
                         <small>${song.type}</small>
                     </div>
                 `
-                console.log(`${song.type}, ${song.name}, ${song.artist}`)
+               // console.log(`${song.type}, ${song.name}, ${song.artist}`)
             }
         }
     )
