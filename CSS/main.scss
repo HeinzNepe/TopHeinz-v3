@@ -265,13 +265,13 @@
         //TODO Fix denne elendige transitionen. Plag Soni for løsninger
         .hidden
         {
-          opacity: 0.1;
           position: fixed;
           right: 2rem;
           bottom: 2rem;
           transition: 0.3s;
+          opacity: 0;
 
-          & :hover
+          &:hover
           {
             opacity: 1;
           }

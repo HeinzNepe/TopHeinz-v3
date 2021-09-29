@@ -178,13 +178,13 @@ footer {
 }
 
 .hidden {
-  opacity: 0.1;
   position: fixed;
   right: 2rem;
   bottom: 2rem;
   transition: 0.3s;
+  opacity: 0;
 }
-.hidden :hover {
+.hidden:hover {
   opacity: 1;
 }
 
