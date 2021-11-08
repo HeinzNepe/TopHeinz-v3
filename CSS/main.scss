@@ -27,6 +27,7 @@
         4.5 Utvikling
             4.5.1 Html
             4.5.M Media Queries
+            4.6 Projects info
     5 Useless elements
  */
 
@@ -249,13 +250,14 @@
           width: $Album-Card-Width;
           text-align: center;
           border-radius: 5%;
+          border: $Site-Default-Red solid 2px;
           background: $DM-Card-Gray;
           margin: 2em;
         }
 
         .album-img
         {
-          width: $Album-Card-Width;
+          width: calc(15em - 4px);
           padding-bottom: 1em;
           user-select: none;
           border-radius: 5%;
@@ -332,7 +334,7 @@
 
 
 
-    .info-item-flex
+    .info-album-flex
     {
       display: flex;
       flex-direction: column;
@@ -341,13 +343,14 @@
       width: 30em;
       text-align: center;
       border-radius: 5%;
+      border: $Site-Default-Red solid 2px;
       background: $DM-Card-Gray;
       margin: 2em;
     }
 
     .info-album-img
     {
-      width: 30em;
+      width: calc(30em - 4px);
       padding-bottom: 1em;
       user-select: none;
       border-radius: 5%;
@@ -473,6 +476,7 @@
 
         .utvikling-txt
         {
+          width: 70ch;
           overflow-wrap: normal;
           line-height: 2em
         }
@@ -482,6 +486,8 @@
           object-fit: contain;
           max-height: 600px;
         }
+
+
 
     //4.5.M Media Queries
         @media (max-width:567px)
@@ -517,5 +523,52 @@
           }
         }
 
+
+// 4.6 Projects info
+    .info-project-flex
+    {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+
+      height: auto;
+      margin: 2em 0 2em 0;
+    }
+
+
+
+    .infocard-project-flex
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 1em;
+      width: 30em;
+      text-align: center;
+      border-radius: 5%;
+      border: $Site-Default-Red solid 2px;
+      background: $DM-Card-Gray;
+      margin: 2em;
+
+    }
+
+    .info-project-img
+    {
+      width: calc(30em - 4px);
+      padding-bottom: 1em;
+      user-select: none;
+      border-radius: 5%;
+      margin: 0 5em 0 0
+    }
+
+    .proj-description {
+      width:70ch;
+    }
+
+    .project-link
+    {
+      text-decoration: underline;
+    }
 // 5 Useless elements
 

@@ -30,6 +30,7 @@ Header
         4.5 Utvikling
             4.5.1 Html
             4.5.M Media Queries
+            4.6 Projects info
     5 Useless elements
  */
 * {
@@ -166,12 +167,13 @@ footer {
   width: 15em;
   text-align: center;
   border-radius: 5%;
+  border: #ed0929 solid 2px;
   background: #505050;
   margin: 2em;
 }
 
 .album-img {
-  width: 15em;
+  width: calc(15em - 4px);
   padding-bottom: 1em;
   user-select: none;
   border-radius: 5%;
@@ -221,7 +223,7 @@ footer {
   margin: 2em 0 2em 0;
 }
 
-.info-item-flex {
+.info-album-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,12 +231,13 @@ footer {
   width: 30em;
   text-align: center;
   border-radius: 5%;
+  border: #ed0929 solid 2px;
   background: #505050;
   margin: 2em;
 }
 
 .info-album-img {
-  width: 30em;
+  width: calc(30em - 4px);
   padding-bottom: 1em;
   user-select: none;
   border-radius: 5%;
@@ -314,6 +317,7 @@ footer {
 }
 
 .utvikling-txt {
+  width: 70ch;
   overflow-wrap: normal;
   line-height: 2em;
 }
@@ -343,6 +347,44 @@ footer {
     width: 75%;
   }
 }
+.info-project-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  margin: 2em 0 2em 0;
+}
+
+.infocard-project-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1em;
+  width: 30em;
+  text-align: center;
+  border-radius: 5%;
+  border: #ed0929 solid 2px;
+  background: #505050;
+  margin: 2em;
+}
+
+.info-project-img {
+  width: calc(30em - 4px);
+  padding-bottom: 1em;
+  user-select: none;
+  border-radius: 5%;
+  margin: 0 5em 0 0;
+}
+
+.proj-description {
+  width: 70ch;
+}
+
+.project-link {
+  text-decoration: underline;
+}
+
 #Header-Section {
   display: flex;
 }
