@@ -22,6 +22,7 @@ fetch("/JS/utvikling/projects.json").then(response=>response.json()).then(data=>
                     </br>
                     <p class="proj-description">${project.desc}</p>
                     </br>
+                    <b>Status:</b>
                     <p>This project is ${project.status}</p>
                     </br>
             `
