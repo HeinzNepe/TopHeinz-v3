@@ -8,7 +8,7 @@
     "status" : "Completed",
     "image" : "/mainbilder/sites/Utvikling/game.png",
     "link": "http//game.topheinz.com",
-    "skjema" : "https://forms.gle/SJR934B1MAKSyf3J7",
+    "form" : "https://forms.gle/SJR934B1MAKSyf3J7",
     "desc" : "This is a project where i made a coinflipper game. The player chooses heads or tails, and if the computer flips what they guess they get a point. This all gets synced to a sql database i host."
   }
 ]

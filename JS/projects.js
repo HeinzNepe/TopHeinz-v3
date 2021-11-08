@@ -26,6 +26,9 @@ fetch("/JS/utvikling/projects.json").then(response=>response.json()).then(data=>
                     <b>Location:</b>
                     <a href="${project.link}">Link</a>
                     </br>
+                    <b>Feedback form:</b>
+                    <a href="${project.form}">Link</a>
+                    </br>
                     <h>A short description</h>
                     </br>
                     <p class="proj-description">${project.desc}</p>
