@@ -10,7 +10,7 @@ fetch("/JS/utvikling/projects.json").then(response=>response.json()).then(data=>
         if(project.id.toString()===projectinfo) {
             document.querySelector("#project-input-js").innerHTML=`
                     </br>
-                    <h>${project.name}</h>
+                    <h style="margin: 1em">${project.name}</h>
                     <div class="infocard-project-flex">
                         <a href="${project.link}">
                         <img alt="imageload failed" class="info-project-img" src="${project.image}">
@@ -20,20 +20,22 @@ fetch("/JS/utvikling/projects.json").then(response=>response.json()).then(data=>
                         <smaller>${project.start} til ${project.end}</smaller>
                         <smaller>${project.status}</smaller>
                     </div>
-                    <b>Status:</b>
-                    <p>This project is ${project.status}</p>
-                    </br>
-                    <b>Location:</b>
-                    <a href="${project.link}">Link</a>
-                    </br>
-                    <b>Feedback form:</b>
-                    <a href="${project.form}">Link</a>
-                    </br>
-                    <h>A short description</h>
-                    </br>
-                    <p class="proj-description">${project.desc}</p>
-                    </br>
-
+                    <div>
+                        <b>Status:</b>
+                        <p>This project is ${project.status}</p>
+                        </br>
+                        <b>Project info:</b>
+                        </br>
+                        <a href="${project.form}">Feedback form</a>
+                        </br>
+                        <a href="${project.link}">Link</a>
+                    </div>
+                    <div style="margin: 1em">
+                        <h>A short description</h>
+                        </br>
+                        <p class="proj-description">${project.desc}</p>
+                        </br>
+                    </div>
             `
         }
 
