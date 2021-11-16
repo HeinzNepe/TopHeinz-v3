@@ -8,7 +8,7 @@ fetch("/JS/utvikling/projects.json").then(response=>response.json()).then(data=>
             document.querySelector("#project-input-js").innerHTML+=`
                     <div class="item-flex">
                         <a href="/subpages/project.html?pid=${project.id}">
-                            <img alt="imageload failed" class="album-img" src="${project.image}">
+                            <img alt="imageload failed" class="music" src="${project.image}">
                         </a>
                         <b>${project.name}</b>
                         <smaller>${project.start} til ${project.end}</smaller>

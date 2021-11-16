@@ -8,7 +8,7 @@
                 document.querySelector("#artist-input-js").innerHTML+=`
                     <div class="item-flex">
                         <a href="/subpages/song.html?song-id=${song.id}">
-                            <img alt="imageload failed" class="album-img" src="${song.image}">
+                            <img alt="imageload failed" class="music" src="${song.image}">
                         </a>
                         <i>${song.name}</i>
                         <b>By ${song.artist}</b>

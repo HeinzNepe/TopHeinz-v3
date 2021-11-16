@@ -154,7 +154,7 @@ Interests section
   width: 16em;
 }*/
 
-.album-img {
+.music {
   width: 15em;
   padding-bottom: 1em;
   user-select: none;
@@ -177,7 +177,7 @@ Info artist
 
 
 
-.info-album-flex {
+.info-music-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,7 +191,7 @@ Info artist
 
 
 
-.info-album-img {
+.info-music {
   width: 15em;
   padding-bottom: 1em;
   user-select: none;
