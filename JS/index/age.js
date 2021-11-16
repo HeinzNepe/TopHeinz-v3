@@ -16,7 +16,7 @@ function yearsSince(date)
 // Enter your birthday in a Date() object when calling the function.
 // You need to use the (objectively stupid) american format MM/DD/YYYY
 // Now use the return value of this function. E.g.: document.querySelector("p").innerHTML = yearsSince...
-console.log("calculate_age(new Date(2004, 10, 12))");
+console.log("yearsSince(new Date(2004, 10, 12))");
 console.log(yearsSince(new Date(2004, 10, 12)));
 
 document.getElementById("agejs").innerHTML = yearsSince(new Date(2004, 10, 12))
