@@ -238,9 +238,9 @@ footer {
 
 .info-music {
   width: calc(30em - 4px);
+  border-radius: 5% 5% 0 0;
   padding-bottom: 1em;
   user-select: none;
-  border-radius: 5%;
   margin: 0 5em 0 0;
 }
 
@@ -255,12 +255,22 @@ footer {
   text-decoration: underline;
 }
 
+#youtube-link {
+  width: 64px;
+}
+
+#info-music-platform-youtube {
+  display: flex;
+  flex-direction: column;
+}
+
 #spotify-link {
   width: 64px;
 }
 
-#youtube-link {
-  width: 64px;
+#info-music-platform-spotify {
+  display: flex;
+  flex-direction: column;
 }
 
 #brukerstotte-main {
