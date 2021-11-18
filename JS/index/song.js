@@ -14,30 +14,28 @@ fetch("/JS/index/songs.json").then(response=>response.json()).then(data=>{
                     <i>${song.name}</i>
                     <b>By ${song.artist}</b>
                     <small>${song.type}</small>
-                    <div id="info-music-platform"></div>
+                    <div id="info-music-platform">
+                        <div id="info-music-platform-youtube"></div>
+                        <div id="info-music-platform-spotify"></div>
+                    </div>
                     
             `
-            if("youtube" in song || "spotify" in song){ /** will return true if exist */
-            document.querySelector("#info-music-platform").innerHTML+=`
-                <div class="info-music-platform">
-                    <div id="info-music-platform-youtube"></div>
-                    <div id="info-music-platform-spotify"></div>
-                </div>`
-                if ("youtube" in song) {
-                    document.querySelector("#info-music-platform-youtube").innerHTML=`                    
-                    <a class="music-link" id="youtube-link" href="${song.youtube}">
-                        <img id="youtube-link" src="/mainbilder/sites/Index/Music/youtube_social_icon_white.png" alt="imgload failed">
-                        Youtube
-                    </a>`
-                }
-                if ("spotify" in song) {
-                    document.querySelector("#info-music-platform-spotify").innerHTML=`                    
-                    <a class="music-link" id="spotify-link" href="${song.spotify}">
-                        <img id="spotify-link" src="/mainbilder/sites/Index/Music/Spotify_Icon_RGB_Green.png" alt="imgload failed">
-                        Spotify
-                    </a>`
-                }
+
+            if ("youtube" in song) {
+                document.querySelector("#info-music-platform-youtube").innerHTML=`                    
+                <a class="music-link" id="youtube-link" href="${song.youtube}">
+                    <img id="youtube-link" src="/mainbilder/sites/Index/Music/youtube_social_icon_white.png" alt="imgload failed">
+                    Youtube
+                </a>`
             }
+            if ("spotify" in song) {
+                document.querySelector("#info-music-platform-spotify").innerHTML=`                    
+                <a class="music-link" id="spotify-link" href="${song.spotify}">
+                    <img id="spotify-link" src="/mainbilder/sites/Index/Music/Spotify_Icon_RGB_Green.png" alt="imgload failed">
+                    Spotify
+                </a>`
+            }
+
         }
 
     }
