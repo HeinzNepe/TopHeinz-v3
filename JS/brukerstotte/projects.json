@@ -2,13 +2,12 @@
   {
     "id" : "b0",
     "type" : "Prosjekt",
-    "name": "Toss a coin",
-    "start" : "14.10.21",
-    "end" : "11.11.21",
-    "status" : "Completed",
+    "name": "Helpdesk",
+    "start" : "6.9.21",
+    "end" : "x",
+    "status" : "Ongoing",
     "image" : "/mainbilder/sites/Utvikling/game.png",
-    "link": "http://game.topheinz.com",
-    "form" : "https://forms.gle/SJR934B1MAKSyf3J7",
+    "link": "https://help.yessness.com/",
     "desc" : "This is a project where i made a coinflipper game. The player chooses heads or tails, and if the computer flips what they guess they get a point. This all gets synced to a sql database i host."
   }
 ]
