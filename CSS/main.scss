@@ -27,7 +27,8 @@
         4.5 Utvikling
             4.5.1 Html
             4.5.M Media Queries
-            4.6 Projects info
+        4.6 Projects info
+            4.6.1
     5 Useless elements
  */
 
@@ -597,8 +598,13 @@
       width:70ch;
     }
 
-    .project-link
+    //Used to link to form and to the project itself in the details page
+    #external-links
     {
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      line-height: 2;
       text-decoration: underline;
     }
 // 5 Useless elements

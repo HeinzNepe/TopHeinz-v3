@@ -30,7 +30,8 @@ Header
         4.5 Utvikling
             4.5.1 Html
             4.5.M Media Queries
-            4.6 Projects info
+        4.6 Projects info
+            4.6.1
     5 Useless elements
  */
 * {
@@ -406,7 +407,11 @@ footer {
   width: 70ch;
 }
 
-.project-link {
+#external-links {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  line-height: 2;
   text-decoration: underline;
 }
 

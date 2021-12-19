@@ -17,15 +17,9 @@ setTimeout(()=>{
 
     everything =  a.concat(b.concat(c))
 
-
-
-    console.log(everything)
-
-
+// Inputs the structure for the page
     for(let project of everything) {
-        console.log(project.id + "  " + projectl.get("pid"))
         if (project.id.toString() === projectl.get("pid")) {
-            console.log("It works")
             document.querySelector("#project-input-js").innerHTML = `
                 </br>
                 <h style="margin: 1em">${project.name}</h>
@@ -39,13 +33,12 @@ setTimeout(()=>{
                     <smaller>${project.status}</smaller>
                 </div>
                 <div>
-                    <b>Status:</b>
+                    <h>Status:</h>
                     <p>This project is ${project.status}</p>
                     </br>
-                    <b>Project info:</b>
+                    <h>Project info:</h>
+                    <div id="external-links"></div>
                     </br>
-                    <div id="feedback"></div>
-                    <a href="${project.link}">Link</a>
                 </div>
                 <div style="margin: 1em">
                     <h>A short description</h>
@@ -54,10 +47,17 @@ setTimeout(()=>{
                     </br>
                 </div>
         `
-        if("form" in everything) {document.querySelector("#feedback").innerHTML = `
+        //Ads the form into the external links section
+        if("form" in project) {
+        document.querySelector("#external-links").innerHTML += `
           <a href="${project.form}">Feedback form</a>
-          </br>
         `}
+        //Ads link to the project into the external links section
+        if("link" in project) {
+            document.querySelector("#external-links").innerHTML += `
+            <a href="${project.link}">Link</a>
+        `}
+            
         }
     }},100)
 
