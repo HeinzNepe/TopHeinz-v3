@@ -1,6 +1,6 @@
 
 //This is the JavaScript for inputting the music cards in index
-fetch("/JS/brukerstotte/projects.json").then(response=>response.json()).then(data=>
+fetch("/JS/driftstotte/projects.json").then(response=>response.json()).then(data=>
     {
         //console.log(data)
         for(const project of data) {
