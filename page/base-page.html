@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <!--Gir ÆØÅ-->
     <meta charset="utf-8" />
+
     <!--Linker extern css sheet-->
     <link rel="stylesheet" type="text/css" href="/CSS/main.css">
-	<link rel="stylesheet" type="text/css" href="/CSS/header.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/header.css">
+
 
     <!--Website tab icon-->
     <link rel="apple-touch-icon" sizes="180x180" href="/mainbilder/favicon/apple-touch-icon.png">
@@ -20,30 +22,33 @@
     <meta name="msapplication-config" content="/mainbilder/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <title>Henrik Hub</title>
-	
+
+    <!-- Link Preview -->
+    <meta property="theme-color" content="#ed0929">
+    <meta property="og:title" content="Henrik Hub">
+    <meta property="og:url" content="https://topheinz.com/">
+    <meta property="og:description" content="Welcome to Henrik Xavier Nepstad's website! This is a website i've primarily for school, but i also use it on my freetime to teach myself HTML, CSS and JS">
+    <meta property="og:site_name" content="Topheinz">
+    <meta property="og:image" content="https://topheinz.com/mainbilder/universal/minilogo.png">
+    <meta property="og:type" content="website">
+
+
 </head>
 <body>
     <header>
         <div id="header-pre"></div>
     </header>
 
-
     <section class="content-sec">
-        <div class="main-flex" id="brukerstotte-main">
-            <!--<img class="utvikling-banner" src="/mainbilder/sites/Utvikling/codecrop.png" alt="fail"> -->
-            <div>
-                <h>Utvikling</h>
-                <br>
-                <p class="brukerstotte-txt">Utvikling is the subject where we learn about software development and maintainance. So far this year, this is what we've been working on</p>
-                <div id="project-input-js">
+        <div class="main-flex" id="main-content">
+            <p1>Base for all subpages is this</p1>
 
-                </div>
-                <footer>
-                    <div id="footer-pre"></div>
-                </footer>
-            </div>
+            <footer>
+                <div id="footer-pre"></div>
+            </footer>
         </div>
     </section>
+
     <section class="scripts">
 
         <!-- Script import -->
@@ -52,6 +57,5 @@
         <!-- Scripts -->
         <script> console.log("Header Loaded"); $("#header-pre").load("/sections/header.html");</script>
         <script>console.log("Footer Loaded");$("#footer-pre").load("/sections/footer.html");</script>
-        <script src="/JS/brukerstotte/brukerstotte.js"></script>
     </section>
 </body>
