@@ -7,7 +7,7 @@ fetch("/JS/brukerstotte/projects.json").then(response=>response.json()).then(dat
             //console.log(project.name)
             document.querySelector("#project-input-js").innerHTML+=`
                     <div class="item-flex">
-                        <a href="/subpages/project.html?pid=${project.id}">
+                        <a href="/page/project.html?pid=${project.id}">
                             <img alt="imageload failed" class="music" src="${project.image}">
                         </a>
                         <b>${project.name}</b>
