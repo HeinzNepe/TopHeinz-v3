@@ -10,5 +10,17 @@
     "link": "https://game.topheinz.com",
     "form" : "https://forms.gle/SJR934B1MAKSyf3J7",
     "desc" : "This is a project where i made a coinflipper game. The player chooses heads or tails, and if the computer flips what they guess they get a point. This all gets synced to a sql database i host."
+  },
+  {
+    "id" : "u1",
+    "type" : "Prosjekt",
+    "name": "Shopheinz",
+    "start" : "14.01.22",
+    "end" : "11.03.22",
+    "status" : "Completed",
+    "image" : "https://shop.topheinz.com/img/logo.png",
+    "link": "https://shop.topheinz.com",
+    "form" : "https://forms.gle/BufyaVu41dTnGccP9",
+    "desc" : "In this project we made a functioning webstore that used an API instead of PHP to interface with a database. Over the span of 3 months i went from not knowing any C# to being quite comfortable with the language."
   }
 ]
