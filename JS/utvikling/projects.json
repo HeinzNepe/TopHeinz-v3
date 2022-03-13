@@ -3,9 +3,9 @@
     "id" : "u0",
     "type" : "Prosjekt",
     "name": "Toss a coin",
-    "start" : "14.10.21-11.11.21, 12.03.2022",
-    "end" : "",
-    "status" : "Reopened",
+    "start" : "14.10.21",
+    "end" : "11.11.21",
+    "status" : "Completed",
     "image" : "/mainbilder/sites/Utvikling/game.png",
     "link": "https://game.topheinz.com",
     "form" : "https://forms.gle/SJR934B1MAKSyf3J7",
@@ -22,5 +22,17 @@
     "link": "https://shop.topheinz.com",
     "form" : "https://forms.gle/BufyaVu41dTnGccP9",
     "desc" : "In this project we made a functioning webstore that used an API instead of PHP to interface with a database. Over the span of 3 months i went from not knowing any C# to being quite comfortable with the language."
-  }
+  },
+  {
+    "id" : "u0",
+    "type" : "Prosjekt",
+    "name": "Toss a coin",
+    "start" : "13.03.22",
+    "end" : "",
+    "status" : "Reopened",
+    "image" : "/mainbilder/sites/Utvikling/game.png",
+    "link": "https://game.topheinz.com",
+    "form" : "",
+    "desc" : "After completing the webshop, i've decided to develop an API for the game instead of using PHP, as it's more secure and i can move the hosting to Github"
+  },
 ]
