@@ -24,9 +24,9 @@
     "desc" : "In this project we made a functioning webstore that used an API instead of PHP to interface with a database. Over the span of 3 months i went from not knowing any C# to being quite comfortable with the language."
   },
   {
-    "id" : "u0",
+    "id" : "u2",
     "type" : "Prosjekt",
-    "name": "Toss a coin",
+    "name": "Toss a coin v2",
     "start" : "13.03.22",
     "end" : "",
     "status" : "Reopened",
