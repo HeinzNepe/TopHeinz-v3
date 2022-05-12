@@ -35,4 +35,16 @@
     "form" : "",
     "desc" : "After completing the webshop, i've decided to develop an API for the game instead of using PHP, as it's more secure and i can move the hosting to Github"
   },
+    {
+    "id" : "u3",
+    "type" : "Prosjekt",
+    "name": "Recal Social",
+    "start" : "20.04.22",
+    "end" : "13.05.22",
+    "status" : "Closed",
+    "image" : "https://media.discordapp.net/attachments/839789145450479649/974310686400335892/logocolor.png",
+    "link": "https://social.recalstudios.net/",
+    "form" : "https://forms.gle/XbH7AfSUuoCNhmtbA",
+    "desc" : "After completing the webshop, i've decided to develop an API for the game instead of using PHP, as it's more secure and i can move the hosting to Github"
+  }
 ]
