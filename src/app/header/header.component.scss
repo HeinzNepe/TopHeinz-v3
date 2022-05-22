@@ -1,0 +1,29 @@
+// Import main stylesheet
+    @import "src/styles.scss";
+
+
+// Styles header box
+    .header
+    {
+        background-color: $Background-Gray;
+        box-shadow: $Site-Color 0 0 1rem;
+    }
+
+// Styles link
+    .link
+    {
+        font-size: 1.5rem;
+    }
+
+// Styling for button flex
+    .buttons
+    {
+        width: 25rem;
+    }
+
+// Sets size for pfp
+    .pfp
+    {
+        width: 5rem;
+        height: 5rem;
+    }
