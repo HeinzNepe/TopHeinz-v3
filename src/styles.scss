@@ -17,7 +17,7 @@
     $Faded-Text-White: #9d9d9d;
     $Background-Gray:#2F3137;
     $Background-Darker:#212227;
-    $Site-Color: #40446E;
+    $Site-Color: #8892ec;
     $Site-Darker-Color: #40446E;
     $Site-Darkest-Color: #2D304D;
 
@@ -95,21 +95,34 @@
 
 
 // 2.1 Utility classes
-    .rounded{border-radius: $Roundness;}
+
+    // Layout
     .horizontal{display:flex;flex-direction:row;justify-content:space-between;}
     .vertical{display:flex;flex-direction:column;justify-content:space-between;}
-    .link{color:$Text-White;font-weight: bold;}
+    .rounded{border-radius: $Roundness;}
     .space-around{justify-content:space-around !important;}
+
+    // Text layout and styling
+    .text-block {width: 69ch !important;line-height: 1.5em;p{padding: 1rem;}}
     .center-text{text-align:center !important;align-items: center !important;}
-    .text-block {width: 65ch !important;line-height: 1.5em;p{padding: 1rem;}}
-    .fit-content{width: fit-content;}
+    .left-text{text-align:left !important;}
+    .right-text{text-align:right !important;}
+    .link{color:$Text-White;font-weight: bold;}
+
+    // Image layout and styling
     .img{object-fit:cover;aspect-ratio:1;border-radius: $Rounderness;}
     .sixrem-img{object-fit:cover;width:6rem;aspect-ratio:1;border-radius: $Rounderness;margin-right: 1rem;}
-    .margin{margin: 2rem;}
+
+    // Padding and Margin
     .padding-sides{padding: 0 2rem;}
+    .more-margin{margin: 5rem;}
+    .margin{margin: 2rem;}
     .bottom-margin{margin-bottom: 6rem;}
     .lessmargin{margin: 1rem;}
     .zero{margin:0;padding: 0;}
+
+    // Width
+    .fit-content{width: fit-content;}
     .ch70{width:70ch !important;}
     .width25{width:25% !important;}
     .width30{width:30% !important;}
