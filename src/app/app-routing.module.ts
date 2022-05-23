@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {HomeComponent} from "./home/home.component";
-import {NotfoundComponent} from "./notfound/notfound.component";
-import {ProjectsComponent} from "./projects/projects.component";
-import {SchoolComponent} from "./school/school.component";
-import {AboutComponent} from "./about/about.component";
+import {HomeComponent} from "./pages/home/home.component";
+import {NotfoundComponent} from "./pages/notfound/notfound.component";
+import {ProjectsComponent} from "./pages/projects/projects.component";
+import {SchoolComponent} from "./pages/school/school.component";
+import {AboutComponent} from "./pages/about/about.component";
 
 const routes: Routes = [
     { path: '',   redirectTo: '/home', pathMatch: 'full' },
