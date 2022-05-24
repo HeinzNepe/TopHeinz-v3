@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<div class="vertical center-text">
+    <h1>School page</h1>
+
+    <!-- Section for API connection -->
+    <section>
+        <div *ngFor="let product of products">
+            <h1>{{product.id}}</h1>
+            <h1>{{product.name}}</h1>
+            <h1>{{product.description}}</h1>
+            <h1>{{product.price}}</h1>
+            <h1>{{product.stock}}</h1>
+        </div>
+    </section>
+</div>
