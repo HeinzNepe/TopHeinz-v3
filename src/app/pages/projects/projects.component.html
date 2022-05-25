@@ -2,4 +2,14 @@
 
 <div class="vertical center-text">
     <h1>Projects page</h1>
+    <section>
+        <div *ngFor="let project of projects">
+            <div class="vertical gray-background" >
+                <h1>{{project.name}}</h1>
+                <p>{{project.start}}</p>
+                <p>{{project.end}}</p>
+                <p>{{project.status}}</p>
+            </div>
+        </div>
+    </section>
 </div>
