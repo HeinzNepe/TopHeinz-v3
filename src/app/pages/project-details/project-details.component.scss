@@ -1,21 +1,6 @@
 // Import main css
 @import "/src/styles";
 
-// Styles the flex for all the projects
-.project-flex
-{
-    // Flex
-    display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    gap: 2rem;
-
-    // Centers the children
-    align-items: center;
-    justify-content: center;
-
-    margin: auto 5% auto 5%;
-}
 
 // Styles each project card
 .project
@@ -33,18 +18,12 @@
     border-radius: $Rounderness;
     background-color: $Site-Darkerer-Color;
 
-
     // Animation
     transition: ease-in-out 200ms;
 
     &:hover
     {
         background-color:$Site-Darker-Color;
-    }
-
-    * {
-        text-decoration: none;
-        color: $Text-White;
     }
 }
 

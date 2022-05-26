@@ -2,19 +2,42 @@
 
 <div class="vertical center-text">
     <h1>Projects page</h1>
+    <p class="text-block">On this page you'll be able to see all the projects I've had in recent times. If you want more
+    details, you can press the card to get a details page.</p>
+
+    <!-- Section for dynamically loaded projects -->
     <section>
+        <!-- Loads subject by subject -->
         <div *ngFor="let subject of subjects">
+
             <!-- Subject only shows is project -->
-            <div *ngIf="subject.projects.length > 0">
+            <div class="center-text" *ngIf="subject.projects.length > 0">
+                <!-- Load subject name -->
                 <h1>{{subject.name}}</h1>
-                <div  class="horizontal">
-                    <div *ngFor="let project of subject.projects">
-                        <div class="vertical">
-                            <p>{{project.name}}</p>
+                <!-- Project flex for subject -->
+                <div class="project-flex">
+
+                    <!-- Load each project individually -->
+                    <div class="project center-text" *ngFor="let project of subject.projects">
+                        <a routerLink="/projects/{{project.id}}">
+                        <img class="project-image padding" src="{{project.imageUrl}}" alt="{{project.name}} image">
+                        <p class="center-text">{{project.name}}</p>
+                        <!-- Start time and end time -->
+                        <div>
+                            <p class="gray-text project-dates" *ngIf="project.start != null">Started {{splitDates(project.start)}}</p>
+                            <p class="gray-text project-dates" *ngIf="project.start == null">N/A</p>
+
+                            <p class="gray-text project-dates" *ngIf="project.end != null && (project.status == 'Ongoing' || project.status == 'On hold')">Active {{splitDates(project.end)}}</p>
+                            <p class="gray-text project-dates" *ngIf="project.end != null && project.status != 'Ongoing' && project.status != 'On hold'">Ended {{splitDates(project.end)}}</p>
+                            <p class="gray-text project-dates" *ngIf="project.end == null">N/A</p>
                         </div>
+                        <p class="center-text gray-text">{{project.status}}</p>
+                        </a>
                     </div>
+
                 </div>
             </div>
+
         </div>
     </section>
 </div>

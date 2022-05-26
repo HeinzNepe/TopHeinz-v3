@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<div class="vertical center-text">
+    <h1>Project details</h1>
+
+    <section class="project-flex">
+        <!-- Load each project individually -->
+            <img class="project-image padding" src="{{project.imageUrl}}" alt="{{project.name}} image">
+            <p class="center-text">{{project.name}}</p>
+            <!-- Start time and end time -->
+            <div>
+                <p class="gray-text project-dates">Started {{splitDates(project.start)}}</p>
+                <p class="gray-text project-dates" *ngIf="project.end != null">Ended {{splitDates(project.end)}}</p>
+                <p class="gray-text project-dates" *ngIf="project.end == null">N/A</p>
+            </div>
+            <p class="center-text gray-text">{{project.status}}</p>
+
+            <div class="vertical center-text">
+                <a *ngIf="project.link != null" class="link" href="{{project.link}}">Link</a>
+                <a *ngIf="project.form != null" class="link" href="{{project.form}}">Form</a>
+                <p *ngIf="project.description != null" class="text-block">{{project.description}}</p>
+            </div>
+    </section>
+</div>

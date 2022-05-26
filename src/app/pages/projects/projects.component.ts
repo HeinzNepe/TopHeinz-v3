@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {firstValueFrom} from "rxjs";
 import {HttpService} from "../../services/http/http.service";
 import {Subject} from "../../models/subject.model";
@@ -10,6 +10,7 @@ import {environment} from "../../../environments/environment";
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+    // Variable used to store subjects response
     subjects: Subject[] = []
 
   constructor(private httpService: HttpService) { }
@@ -28,4 +29,8 @@ export class ProjectsComponent implements OnInit {
 
     }
 
+    splitDates(datetime: string)
+    {
+        return datetime.split(' ', 1)
+    }
 }
