@@ -1,0 +1,63 @@
+// Import main css
+@import "/src/styles";
+
+// Styles the flex for all the platforms
+.platform-flex
+{
+    // Flex
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    // Centers the children
+    align-items: center;
+    justify-content: center;
+
+    margin: auto 5% auto 5%;
+}
+
+// Styling for platform div
+.platform
+{
+    // Size
+    width: 10rem;
+
+    // Flex
+    display: flex;
+    flex-direction: column;
+
+    // Styling
+    border-radius: $Rounderness;
+    background-color: $Site-Darkerer-Color;
+
+
+    // Animation
+    transition: ease-in-out 200ms;
+
+    &:hover
+    {
+        background-color:$Site-Darker-Color;
+    }
+
+    * {
+        text-decoration: none;
+        color: $Text-White;
+    }
+}
+
+// Styles image
+.platform-image
+{
+    // Size
+    object-fit: contain;
+    aspect-ratio:1;
+    width:120px;
+
+    // Margin
+    margin: 9px;
+    margin-bottom: 0 !important; // Closes the distance between image and text
+
+    // Styling
+    border-radius: $Rounderness; // Round
+}

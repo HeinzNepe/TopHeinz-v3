@@ -16,11 +16,6 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-    public getAllProducts(): Observable<Product[]>
-    {
-        return this.http.get<Product[]>("https://api.shop.topheinz.com/products/all")
-    }
-
     public getAllProjects(): Observable<Subject[]>
     {
         return this.http.get<Subject[]>(this.url+'projects/all')
