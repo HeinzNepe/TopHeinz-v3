@@ -1,4 +1,8 @@
-.gray-background
+// Import main css
+@import "/src/styles";
+
+.project
 {
-    background: gray;
+    flex-direction: column;
+    margin: 2rem;
 }
