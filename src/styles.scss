@@ -111,6 +111,7 @@
     .right-text{text-align:right !important;}
     .gray-text{color: $Faded-Text-White}
     .link{color:$Text-White;font-weight: bold;}
+    .animated-link{font-size: 1.5rem;position: relative;text-align: center;justify-content: center;color: $Text-White;text-decoration: none;font-weight: bold;&::after{position: absolute;content: "";left: 0;bottom: -5px;width: 100%;height: 5px;background: $Site-Color;border-radius: 2rem;transform: scaleX(0);transition: 200ms ease;} &:hover:not(.no-line)::after{transform: unset;}}
 
     // Image layout and styling
     .img{object-fit:cover;aspect-ratio:1;border-radius: $Rounderness;}

@@ -1,0 +1,71 @@
+// Import main style sheet
+@import "src/styles.scss";
+
+// 1.1 Fonts
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+
+
+
+// 1.2 Colors
+$background: #212227;
+$accent: #40446e;
+$primary: #8892ec;
+$light: #d3d6f0;
+$foreground: #ffffff;
+
+// 2.1 Body
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    color: $light;
+    background: $background;
+    font-family: 'Poppins', sans-serif;
+}
+
+// 2.2 Logo
+.logo
+{
+    width: 40rem;
+    aspect-ratio: 1;
+    margin: -4rem;
+    background: linear-gradient(45deg, $accent, $primary);
+    mask-image: url("/assets/logo.svg");
+    -webkit-mask-image: url("/assets/logo.svg");
+    mask-size: 100%;
+    transform: scale(.75);
+    opacity: 0;
+    animation: in .9s ease forwards .2s;
+}
+
+// 2.3 Text
+h1
+{
+    margin: 0;
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateY(.5em);
+    animation: in .5s ease forwards .35s;
+}
+
+h3
+{
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(.5em);
+    animation: in .5s ease forwards .5s;
+}
+
+// 3 Animations
+@keyframes in
+{
+    to
+    {
+        transform: none;
+        opacity: 1;
+    }
+}

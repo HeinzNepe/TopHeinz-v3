@@ -6,9 +6,11 @@ import {ProjectsComponent} from "./pages/projects/projects.component";
 import {AboutComponent} from "./pages/about/about.component";
 import {ProjectDetailsComponent} from "./pages/project-details/project-details.component";
 import {SocialsComponent} from "./pages/socials/socials.component";
+import {LandingComponent} from "./pages/landing/landing.component";
 
 const routes: Routes = [
-    { path: '',   redirectTo: '/home', pathMatch: 'full' },
+    {path: '',   redirectTo: '/landing', pathMatch: 'full'},
+    {path:'landing', component: LandingComponent},
     {path:'home', component: HomeComponent},
     {path:'projects', component: ProjectsComponent},
     {path:'projects/:id', component: ProjectDetailsComponent},

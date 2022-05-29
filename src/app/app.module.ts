@@ -12,6 +12,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { HttpClientModule } from "@angular/common/http";
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 import { SocialsComponent } from './pages/socials/socials.component';
+import { LandingComponent } from './pages/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SocialsComponent } from './pages/socials/socials.component';
     ProjectsComponent,
     AboutComponent,
     ProjectDetailsComponent,
-    SocialsComponent
+    SocialsComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
