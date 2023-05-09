@@ -21,7 +21,7 @@ export class ProjectsComponent implements OnInit {
 
     async getProjects()
     {
-        this.subjects = await firstValueFrom(this.httpService.getAllProjects())
+        this.subjects = await firstValueFrom(this.httpService.getAllSubjects())
         if (!environment.production) {
             console.log("[Project-component] API returned following subjects:")
             console.log(this.subjects);

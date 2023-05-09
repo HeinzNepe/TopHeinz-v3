@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {Product} from "../../models/product.model";
 import {Subject} from "../../models/subject.model";
 import {Project} from "../../models/project.model";
 
@@ -16,9 +15,9 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-    public getAllProjects(): Observable<Subject[]>
+    public getAllSubjects(): Observable<Subject[]>
     {
-        return this.http.get<Subject[]>(this.url+'projects/all')
+        return this.http.get<Subject[]>(this.url+'subjects/all')
     }
 
     public getProjectById(id: number): Observable<Project>
