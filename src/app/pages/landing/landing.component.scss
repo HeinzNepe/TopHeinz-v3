@@ -28,11 +28,11 @@ body
 }
 
 // 2.2 Logo
-.logo
+#logo
 {
-    width: 40rem;
+    width: 28rem;
     aspect-ratio: 1;
-    margin: -4rem;
+    margin: -2rem;
     background: linear-gradient(45deg, $accent, $primary);
     mask-image: url("/assets/logo.svg");
     -webkit-mask-image: url("/assets/logo.svg");
