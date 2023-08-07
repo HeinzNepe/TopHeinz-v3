@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:4.0
+REV:20230807T180000Z
+FN: Henrik Nepstad
+N:Nepstad;Henrik;Xavier;
+TEL;TYPE=HOME,VOICE:+47 40340908
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:mail@topheinz.com
+ADR;CHARSET=UTF-8;TYPE=HOME:;;;Bergen;Vestland;;Norway
+BDAY:20041112
+PHOTO;MEDIATYPE=image/jpeg:https://topheinz.com/assets/HenrikXavierNepstad.jpg
+URL:https://topheinz.com/
+SOURCE:https://topheinz.com/assets/vcard.vcf
+END:VCARD
