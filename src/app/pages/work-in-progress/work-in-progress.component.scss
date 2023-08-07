@@ -1,0 +1,15 @@
+// Import main stylesheet
+@import "/src/styles";
+
+// Construction icon
+    .wip-construction-icon{
+        width: 15rem;
+        aspect-ratio: 1;
+
+        background: $Faded-Text-White;
+        //background: linear-gradient(45deg, $Site-Dark-Color, $Site-Color);
+        mask-image: url("/assets/images/construction.svg");
+        -webkit-mask-image: url("/assets/images/construction.svg");
+        mask-size: 100%;
+        transform: scale(1);
+    }

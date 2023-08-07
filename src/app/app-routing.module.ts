@@ -7,16 +7,23 @@ import {AboutComponent} from "./pages/about/about.component";
 import {ProjectDetailsComponent} from "./pages/project-details/project-details.component";
 import {SocialsComponent} from "./pages/socials/socials.component";
 import {LandingComponent} from "./pages/landing/landing.component";
+import {WorkInProgressComponent} from "./pages/work-in-progress/work-in-progress.component";
 
 const routes: Routes = [
     {path: '',   redirectTo: '/landing', pathMatch: 'full'},
+    {path: 'projects',   redirectTo: '/wip', pathMatch: 'full'},
+
     {path:'landing', component: LandingComponent},
     {path:'home', component: HomeComponent},
-    {path:'projects', component: ProjectsComponent},
-    {path:'projects/:id', component: ProjectDetailsComponent},
     {path:'socials', component: SocialsComponent},
     {path:'about', component: AboutComponent},
+    {path:'wip', component: WorkInProgressComponent},
     {path: '**', component: NotfoundComponent}
+
+    /*  Routing to Project component. this is replaced by the WIP component rn
+    {path:'projects', component: ProjectsComponent},
+    {path:'projects/:id', component: ProjectDetailsComponent},
+    */
 
 
 

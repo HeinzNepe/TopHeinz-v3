@@ -17,6 +17,11 @@
             {
                 color: $Faded-Text-White;
             }
+
+            &:is(a)
+            {
+                color: $Text-White;
+            }
         }
 
 

@@ -13,6 +13,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 import { SocialsComponent } from './pages/socials/socials.component';
 import { LandingComponent } from './pages/landing/landing.component';
+import { WorkInProgressComponent } from './pages/work-in-progress/work-in-progress.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LandingComponent } from './pages/landing/landing.component';
     AboutComponent,
     ProjectDetailsComponent,
     SocialsComponent,
-    LandingComponent
+    LandingComponent,
+    WorkInProgressComponent
   ],
   imports: [
     BrowserModule,
