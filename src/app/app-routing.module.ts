@@ -10,16 +10,17 @@ import {LandingComponent} from "./pages/landing/landing.component";
 import {WorkInProgressComponent} from "./pages/work-in-progress/work-in-progress.component";
 
 const routes: Routes = [
-    {path: '',   redirectTo: '/landing', pathMatch: 'full'},
+    {path: '',   redirectTo: '/home', pathMatch: 'full'},
     {path: 'projects',   redirectTo: '/wip', pathMatch: 'full'},
 
-    {path:'landing', component: LandingComponent},
     {path:'home', component: HomeComponent},
     {path:'socials', component: SocialsComponent},
     {path:'about', component: AboutComponent},
     {path:'wip', component: WorkInProgressComponent},
     {path: '**', component: NotfoundComponent}
 
+
+    //{path:'landing', component: LandingComponent},
     /*  Routing to Project component. this is replaced by the WIP component rn
     {path:'projects', component: ProjectsComponent},
     {path:'projects/:id', component: ProjectDetailsComponent},
