@@ -10,6 +10,15 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng deploy --cname=topheinz.com` to build and deploy the website to github pages
 
+## Update 
+
+### Update node
+Run `npm install -g npm@latest` to update node
+
+### Update libraries
+
+Run `ng update` and `npm audit fix` to update libraries
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

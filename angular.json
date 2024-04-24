@@ -112,5 +112,8 @@
       }
     }
   },
-  "defaultProject": "TopHeinzWebsite"
+  "defaultProject": "TopHeinzWebsite",
+  "cli": {
+    "analytics": false
+  }
 }
